@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html data-ng-app="demoApp">
+	 <head>
+	 	<meta charset="utf-8">
+	 	<title>Termal App</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    
+	    <!-- Styles -->
+	    <link rel="stylesheet" media="screen" href="@routes.Assets.at("third/bootstrap/css/bootstrap.css")">
+	    <link rel="stylesheet" media="screen" href="@routes.Assets.at("third/bootstrap/css/bootstrap-responsive.css")">
+	    <link rel="stylesheet" media="screen" href="@routes.Assets.at("third/bootstrap/css/docs.css")">
+	    <link rel="stylesheet" media="screen" href="@routes.Assets.at("third/bootstrap/js/google-code-prettify/prettify.css")">
+		<link rel="stylesheet" media="screen" href="@routes.Assets.at("third/bootstrap/css/bootstrap-theme.css")">
+		<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+		<link rel="shortcut icon" type="image/ico" href="@routes.Assets.at("images/favicon.ico")">
+
+		<script src="@routes.Assets.at("third/angularjs/angular.min.js")" type="text/javascript"></script>
+		<script src="@routes.Assets.at("third/angularjs/angular-resource.min.js")" type="text/javascript"></script>
+		<script src="@routes.Assets.at("javascripts/main.js")" type="text/javascript"></script>
+	 </head>
+	 <body>
+	 	<!-- Navbar ========================================================= -->
+	    <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+            	<div class="containerHeader">
+            		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a style="" class="navbar-brand" href="/"><img src="">termal</a>
+	                <div class="collapse navbar-collapse navbar-main-collapse">
+
+		                <ul class="navbar-nav nav" style="margin: 0px; text-align: center;">
+		                	<li class=""><a href="/">Home</a></li>
+		                    <li class=""><a target="_blank" href="@routes.Assets.at("pdf/Tercio-Agra-Junker-Resume.pdf")">Resume</a></li>
+		                    <li class=""><a target="_blank" href="http://www.linkedin.com/in/tajunker">LinkedIn</a></li>
+				        	<li class=""><a target="_blank" href="https://github.com/tajunker">GitHub</a></li>
+				        	<li class=""><a target="_blank" href="http://twitter.com/tajunker">Twitter</a></li>
+		                </ul>
+		            </div>
+            	</div>
+            </div>
+        </div>
+	 	<!-- Subhead ================================================== -->
+	 	<header class="jumbotron subhead" id="overview">
+			  <div class="container">
+			  	<br />
+			  	<br />
+			    <h1>Overview</h1>
+			    <p class="lead">termal allows users to input Zip Codes, separated by commas, into the input field. Temperatures for those Zip Codes are fetched from the Accuweather™ API when the user clicks enter or the search button.</p>
+			  </div>
+		</header>
+	 	<div class="container" data-ng-controller="MainController" id="Weather results">
+	 		<div class="row clearfix">
+	 			<div class="span12 column col-md-12" style="margin-left: 0px;">
+	 				<form class="form-inline" role="form">
+						<span style="width: 100%;" class="form-group span8">
+	                        <label class="sr-only" for="zipcode">ZipCode</label>
+	                        <input data-ng-model="zipcodes" type="text" class="form-control" id="zipcode" size="80" placeholder="Zip codes...">
+	                    </span>
+	                    <br />
+	                    <br />
+	                    <button style="width: 100%; min-width: 80px;" data-ng-click="getTemps()" type="submit" class="btn btn-primary span4">Search!</button>
+					</form>					
+					
+					<br />
+					<br />
+					<br />
+					<br />
+					<p style="width:60%; margin-left: 20%; margin-right: 20%;" data-ng-show="loading" class="alert alert-info">
+					  	Loading...
+					</p>
+					<br />
+					<br />
+
+					<br />
+					<br />
+
+				</div>
+				
+				<div class="span12 column col-md-12">
+					<div class="margin-left: 0px;">
+						<h1>WEATHER BY IP</h1>
+						<!--<div class="location">{{ip}}</div>-->
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					
+					<div ng-repeat="result in processedDataIP" style="padding-top: 40px;" >
+
+						<div class="forecast-table">
+							<div class="container">
+								<div class="forecast-container">
+									<div class="today forecast">
+										<div class="forecast-header">
+											<div class="day">Time of Observation</div>
+											<div class="date">{{ result.LocalObservationDateTime }}</div>
+										</div>
+										<br/> 
+										<div class="location" style="float:left; padding-left:20px;">IP Address: {{ip}}</div>
+										<!-- .forecast-header -->
+										<div class="" style="float: right; padding-right:20px;">
+
+								      			C
+								      			<input type="radio" name="temp" ng-model="temp" value="c">
+								      			
+								      		
+								      			<input type="radio" name="temp" ng-model="temp" value="f">
+								      			F
+							      			
+										</div>
+										<br />
+										<div class="forecast-content">
+											
+											<div class="location">{{ result.name }}</div>
+											<div class="location">Mostly {{ result.WeatherText }}</div>
+											
+											<div class="location">Feels like: {{ result.FeelsLikeMetric.Value }} C | {{ result.FeelsLikeImperial.Value }} F</div>
+											<div class="location">Wind chill: {{ result.WindChillTemperatureMetric.Value }} C | {{ result.WindChillTemperatureImperial.Value }} F</div>
+											<div class="location">Raining?: {{ result.HasPrecipitationString }}</div>
+											<div class="location">Day time?: {{ result.IsDayTimeString }}</div>
+											<div class="location">Humidity: {{ result.RelativeHumidity }}%</div>
+											<br />
+											<br />
+											<div class="forecast-icon" style="text-align:center;">	
+												<img src="@routes.Assets.at("images/icons/icon-1.svg")" alt="" width=90>
+												
+											</div>
+											
+											<div class="degree" style="text-align: center; word-break: break-all; margin-right:0px;">			
+												<div class="num" style="margin-right:0px!important;">
+													<span ng-show="temp == 'c'" style="margin-right:0px!important;">{{result.metric.Value}}<sup>o</sup>C</span>
+							      					<span ng-show="temp == 'f'" style="margin-right:0px!important;">{{result.imperial.Value}}<sup>o</sup>F</span>
+													
+													<br/> 
+													
+												</div>
+											</div>
+											<br />
+											<span><img src="@routes.Assets.at("images/icon-umberella.png")" alt="">{{result.PrecipitationProbability}}%</span>
+											<span><img src="@routes.Assets.at("images/icon-wind.png")" alt="">{{ result.WindSpeedMetric.Value }} km/h / {{ result.WindSpeedImperial.Value }} mi/h </span>
+											<span><img src="@routes.Assets.at("images/icon-compass.png")" alt="">{{ result.WindDirectionEnglish }}</span>
+											
+											<div><br />More info <a target="_blank" href="{{ result.MobileLink }}">{{ result.MobileLink }}</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix" style="height: 20px;"><br/></div>
+					</div>
+					
+					
+					<div class="margin-left: 0px;">
+						<h1>WEATHER BY ZIP CODES</h1>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					
+					
+					<div ng-repeat="result in processedData" style="padding-top: 40px;" >
+
+
+
+						<div class="forecast-table">
+							<div class="container">
+								<div class="forecast-container">
+									<div class="today forecast">
+										<div class="forecast-header">
+											<div class="day">Time of Observation</div>
+											<div class="date">{{ result.LocalObservationDateTime }}</div>
+										</div>
+										<br/> 
+										
+										<!-- .forecast-header -->
+										<div class="" style="float: right; padding-right:10px;">
+								      			C
+								      			<input type="radio" name="temp" ng-model="temp" value="c">
+								      		
+								      		
+								      			<input type="radio" name="temp" ng-model="temp" value="f">
+								      			F
+							      			
+										</div>
+										<div class="forecast-content">
+											<div class="location">{{ result.name }}</div>
+											<div class="location">Mostly {{ result.WeatherText }}</div>
+											<div class="location">Feels like: {{ result.FeelsLikeMetric.Value }} C | {{ result.FeelsLikeImperial.Value }} F</div>
+											<div class="location">Wind chill: {{ result.WindChillTemperatureMetric.Value }} C | {{ result.WindChillTemperatureImperial.Value }} F</div>
+											<div class="location">Raining?: {{ result.HasPrecipitationString }}</div>
+											<div class="location">Day time?: {{ result.IsDayTimeString }}</div>
+											<div class="location">Humidity: {{ result.RelativeHumidity }}%</div>
+											<br />
+											<br />
+											<div class="forecast-icon" style="text-align:center;">	
+												<img src="@routes.Assets.at("images/icons/icon-1.svg")" alt="" width=90>
+												
+											</div>
+											
+											<div class="degree" style="text-align: center; word-break: break-all; margin-right:0px;">			
+												<div class="num" style="margin-right:0px!important;">
+													<span ng-show="temp == 'c'" style="margin-right:0px!important;">{{result.metric.Value}}<sup>o</sup>C</span>
+							      					<span ng-show="temp == 'f'" style="margin-right:0px!important;">{{result.imperial.Value}}<sup>o</sup>F</span>
+													
+													<br/> 
+													
+												</div>
+											</div>
+											<br />
+											<span><img src="@routes.Assets.at("images/icon-umberella.png")" alt="">{{result.PrecipitationProbability}}%</span>
+											<span><img src="@routes.Assets.at("images/icon-wind.png")" alt="">{{ result.WindSpeedMetric.Value }} km/h / {{ result.WindSpeedImperial.Value }} mi/h </span>
+											<span><img src="@routes.Assets.at("images/icon-compass.png")" alt="">{{ result.WindDirectionEnglish }}</span>
+											
+											<div><br />More info <a target="_blank" href="{{ result.MobileLink }}">{{ result.MobileLink }}</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix" style="height: 20px;"><br/></div>
+					</div>
+					<!--
+					<h1>Forecast JSON Response</h1>
+					<pre>{{forecast | json}}</pre>
+					-->
+					<h1>ACCUWEATHER JSON RESPONSE</h1> 
+					<pre>{{processedData | json}}</pre>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<h1>TABLE JSON RESPONSE</h1> 
+					<table class="table table-bordered table-striped table-dark " style="max-width: 100%;" width="100%">
+						<thead>
+				  			<tr>
+							    <th scope="col">City</th>
+							    <th scope="col">
+							      Temp | C
+							      <input type="radio" name="temp" ng-model="temp" value="c"> 
+							      <input type="radio" name="temp" ng-model="temp" value="f">
+							      F
+								</th>
+								<th scope="col">
+									Weather Information
+								</th>
+								<th scope="col">
+									Is it Day Time?
+								</th>
+								<th scope="col">
+									Is it raining?
+								</th>
+								<th scope="col">
+									Is it raining (string)?
+								</th>
+								<th scope="col">
+									Time of Observation
+								</th>
+								<th scope="col">
+									Accuweather Link
+								</th>
+						  	</tr>
+						</thead>
+						
+						<tbody>
+						  <tr ng-repeat="result in processedData" ng-class="{'text-danger': result.error}">
+							
+						    <td>
+						      {{ result.name }}
+						    </td>
+						    <td>
+						      <span ng-show="temp == 'c'">{{result.metric.Value}} C</span>
+						      <span ng-show="temp == 'f'">{{result.imperial.Value}} F</span>
+							</td>
+							<td>
+								{{ result.WeatherText }}
+							</td>
+							<td>
+								{{ result.IsDayTime }}
+							</td>
+							<td>
+								{{ result.HasPrecipitation }}
+							</td>
+							<td>
+								{{ result.HasPrecipitationString }}
+							</td>
+							<td>
+								{{ result.LocalObservationDateTime }}
+							</td>
+							<td style="word-break: break-all;">
+								<span style="max-width:100%;">
+									<a target="_blank" href="{{ result.MobileLink }}">{{ result.MobileLink }}</a>
+								</span>
+							</td>
+							
+						  </tr>
+
+						</tbody>
+					</table>
+				</div>	
+				
+				<!-- Testing JSON GET request -->
+				<!-- 	 				
+	 				<div data-ng-controller="FetchController">
+	 					<div class="weather-search">
+						    <div class="row">
+						        <div class="col-xs-12">
+						            <div>
+						                <form class="form-inline" role="form">
+						                    <span style="width: 75%;" class="form-group">
+						                        <label class="sr-only" for="zipcode">ZipCode</label>
+						                        <input data-ng-model="url" type="text" class="form-control" id="zipcode" size="80" placeholder="ZipCode">
+						                    </span>
+						                    <button style="width: 20%; min-width: 80px;" data-ng-click="fetch()" type="submit" class="btn btn-primary">Search!</button>
+						                    <span data-ng-show="message" class="alert"><span class="glyphicon glyphicon-arrow-left">&nbsp;</span>{{message}}</span>
+						                </form>
+						                <br />
+								      	<br />
+								      	<pre>http status code: {{status}}</pre>
+								      	<pre>http response data: {{data}}</pre>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+				    </div>
+				  -->				
+	 				
+	 			</div>
+	 		</div>
+	 	</div>
+	 	<!-- Footer ================================================== -->
+	 	<footer class="footer">
+	 		<div class="container">
+ 				<p>Designed &amp; developed by <a href="http://twitter.com/tajunker" target="_blank">@@tajunker</a>.</p>
+ 				<p>SimpleWeather uses <a href="http://www.playframework.com" target="_blank">Play!</a>, <a href="http://angularjs.org" target="_blank">AngualarJS</a>, and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a>.</p>
+ 				<p>Deployed to <a href="https://www.heroku.com/" target="_blank">Heroku's</a> cloud computing web application hosting platform.</p>
+ 				<p>termal uses <a href="http://www.accuweather.com/" target="_blank">accuweather.com</a> API - The JSON Weather&#8482; API for Developers.</p>
+ 				<ul class="footer-links">
+		        	<li><a target="_blank" href="http://www.linkedin.com/in/tajunker">LinkedIn</a></li>
+		        	<li class="muted">&middot;</li>
+		        	<li><a target="_blank" href="https://github.com/tajunker">GitHub</a></li>
+		        	<li class="muted">&middot;</li>
+		        	<li><a target="_blank" href="http://twitter.com/tajunker">Twitter</a></li>
+		        </ul>
+	 		</div>
+	 	</footer>
+	 	
+	 	<!-- JavaScript ================================================== -->
+	 	<!-- Placed at the end of the document so pages load faster -->
+	 	<!-- Google Universal Analytics -->
+	 	<!--
+	 	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-46957200-1', 'sleepy-garden-8606.herokuapp.com');
+		  ga('send', 'pageview');
+		
+		</script>
+		-->
+	 	<script src="@routes.Assets.at("third/jquery/jquery-1.10.2.min.js")" type="text/javascript"></script>
+		<script src="@routes.Assets.at("third/bootstrap/js/bootstrap.js")" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js" type="text/javascript"></script>
+		<!--
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.js.js"></script>
+		-->
+		<!--
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js" type="text/javascript"></script>
+		-->
+	 </body>
+</html>
