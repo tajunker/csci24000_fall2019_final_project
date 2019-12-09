@@ -94,7 +94,7 @@ var demoApp = angular.module("demoApp", {});
                 console.log("saving data API failed", response); // success
               }
             );
-            
+            $scope.loading = false;
             
           },
           function(error) {
