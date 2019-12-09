@@ -1,6 +1,6 @@
 // @SOURCE:/Users/tajunker/Computer Engineering IUPUI/CSCI 240/Homework/termal/conf/routes
-// @HASH:124c7f0ea59609d9625af263bfa1627567fc893b
-// @DATE:Fri Dec 06 12:14:01 EST 2019
+// @HASH:0eb7547cff87e6193f634903cc2b76498f89ce35
+// @DATE:Mon Dec 09 14:11:33 EST 2019
 
 package controllers;
 

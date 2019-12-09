@@ -37,7 +37,9 @@
 
 		                <ul class="navbar-nav nav" style="margin: 0px; text-align: center;">
 		                	<li class=""><a href="/">Home</a></li>
-		                    <li class=""><a target="_blank" href="@routes.Assets.at("pdf/Tercio-Agra-Junker-Resume.pdf")">Resume</a></li>
+		                	<li class=""><a href="/documentation">Documentation</a></li>
+		                	<li class=""><a target="_blank" href="@routes.Assets.at("pdf/Termal_UMLDiagram.pdf")">UML Diagram</a></li>
+		                    <li class=""><a target="_blank" href="@routes.Assets.at("pdf/Tercio-Agra-Junker-Resume-V3.pdf")">Resume</a></li>
 		                    <li class=""><a target="_blank" href="http://www.linkedin.com/in/tajunker">LinkedIn</a></li>
 				        	<li class=""><a target="_blank" href="https://github.com/tajunker">GitHub</a></li>
 				        	<li class=""><a target="_blank" href="http://twitter.com/tajunker">Twitter</a></li>
@@ -51,7 +53,7 @@
 			  <div class="container">
 			  	<br />
 			  	<br />
-			    <h1>Overview</h1>
+			    <h1>Termal</h1>
 			    <p class="lead">termal allows users to input Zip Codes, separated by commas, into the input field. Temperatures for those Zip Codes are fetched from the Accuweather™ API when the user clicks enter or the search button.</p>
 			  </div>
 		</header>
@@ -78,24 +80,23 @@
 					<br />
 					<br />
 
-					<br />
-					<br />
+					
 
 				</div>
 				
 				<div class="span12 column col-md-12">
 					<div class="margin-left: 0px;">
-						<h1>WEATHER BY IP</h1>
-						<!--<div class="location">{{ip}}</div>-->
+						<h1>IP ADDRESS {{ip}}</h1>
+						<div class="location"></div>
 					</div>
-					<br />
-					<br />
-					<br />
 					<br />
 					<br />
 					
 					<div ng-repeat="result in processedDataIP" style="padding-top: 40px;" >
-
+						<br />
+						<br />
+						<br />
+						<br />
 						<div class="forecast-table">
 							<div class="container">
 								<div class="forecast-container">

@@ -12,6 +12,7 @@ demoApp.controller("MainController", function($scope, Service, $q) {
         $scope.ip = response.data.ip;
 
         console.log("getIPaddress response ", response); // success
+        $scope.loading = false;
       },
       function(response) {
         // optional
@@ -94,7 +95,7 @@ demoApp.controller("MainController", function($scope, Service, $q) {
                 console.log("saving data API failed", response); // success
               }
             );
-            $scope.loading = false;
+            
             
           },
           function(error) {
@@ -206,7 +207,7 @@ demoApp.controller("MainController", function($scope, Service, $q) {
     $scope.loading = false;
     $scope.temp = "f";
 
-    $scope.zipcodes = "10002, 70, 94109, 90210, 46268";
+    $scope.zipcodes = "10002, 46202, 94109, 90210, 46268";
     //$scope.zipcodes = " 10002, 90210";
     //$scope.ips = "68.58.65.2";
     //

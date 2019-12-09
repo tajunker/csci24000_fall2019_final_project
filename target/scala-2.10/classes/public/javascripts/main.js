@@ -12,6 +12,7 @@ demoApp.controller("MainController", function($scope, Service, $q) {
         $scope.ip = response.data.ip;
 
         console.log("getIPaddress response ", response); // success
+        $scope.loading = false;
       },
       function(response) {
         // optional
@@ -94,7 +95,7 @@ demoApp.controller("MainController", function($scope, Service, $q) {
                 console.log("saving data API failed", response); // success
               }
             );
-            $scope.loading = false;
+            
             
           },
           function(error) {
@@ -206,7 +207,7 @@ demoApp.controller("MainController", function($scope, Service, $q) {
     $scope.loading = false;
     $scope.temp = "f";
 
-    $scope.zipcodes = "10002, 70, 94109, 90210, 46268";
+    $scope.zipcodes = "10002, 46202, 94109, 90210, 46268";
     //$scope.zipcodes = " 10002, 90210";
     //$scope.ips = "68.58.65.2";
     //
@@ -222,11 +223,11 @@ demoApp.factory("Service", [
       //"https://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&q=ZIPCODE_HERE";
       "https://dataservice.accuweather.com/locations/v1/postalcodes/US/search?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&q=ZIPCODE_HERE";
     var currentUrl =
-      "http://dataservice.accuweather.com/currentconditions/v1/LOC_KEY?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&details=true";
+      "https://dataservice.accuweather.com/currentconditions/v1/LOC_KEY?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&details=true";
     var currentUrl2 =
-      "http://dataservice.accuweather.com/forecasts/v1/daily/1day/LOC_KEY?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&details=true";
+      "https://dataservice.accuweather.com/forecasts/v1/daily/1day/LOC_KEY?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&details=true";
     var ipUrl = 
-      "http://dataservice.accuweather.com/locations/v1/cities/ipaddress?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&q=IP_ADDRESS&details";
+      "https://dataservice.accuweather.com/locations/v1/cities/ipaddress?apikey=zKAGOAo03qxkltUTUQmzidvHXLmdJxn5&q=IP_ADDRESS&details";
 
     service.getIpaddress = function() {
       return $q.all($http.get("https://api.ipify.org?format=json"));

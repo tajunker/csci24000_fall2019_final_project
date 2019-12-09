@@ -65,7 +65,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
 		                <ul class="navbar-nav nav" style="margin: 0px; text-align: center;">
 		                	<li class=""><a href="/">Home</a></li>
-		                    <li class=""><a target="_blank" href=""""),_display_(Seq[Any](/*40.62*/routes/*40.68*/.Assets.at("pdf/Tercio-Agra-Junker-Resume.pdf"))),format.raw/*40.115*/("""">Resume</a></li>
+		                	<li class=""><a href="/documentation">Documentation</a></li>
+		                	<li class=""><a target="_blank" href=""""),_display_(Seq[Any](/*41.59*/routes/*41.65*/.Assets.at("pdf/Termal_UMLDiagram.pdf"))),format.raw/*41.104*/("""">UML Diagram</a></li>
+		                    <li class=""><a target="_blank" href=""""),_display_(Seq[Any](/*42.62*/routes/*42.68*/.Assets.at("pdf/Tercio-Agra-Junker-Resume-V3.pdf"))),format.raw/*42.118*/("""">Resume</a></li>
 		                    <li class=""><a target="_blank" href="http://www.linkedin.com/in/tajunker">LinkedIn</a></li>
 				        	<li class=""><a target="_blank" href="https://github.com/tajunker">GitHub</a></li>
 				        	<li class=""><a target="_blank" href="http://twitter.com/tajunker">Twitter</a></li>
@@ -79,7 +81,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 			  <div class="container">
 			  	<br />
 			  	<br />
-			    <h1>Overview</h1>
+			    <h1>Termal</h1>
 			    <p class="lead">termal allows users to input Zip Codes, separated by commas, into the input field. Temperatures for those Zip Codes are fetched from the Accuweather™ API when the user clicks enter or the search button.</p>
 			  </div>
 		</header>
@@ -106,34 +108,33 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 					<br />
 					<br />
 
-					<br />
-					<br />
+					
 
 				</div>
 				
 				<div class="span12 column col-md-12">
 					<div class="margin-left: 0px;">
-						<h1>WEATHER BY IP</h1>
-						<!--<div class="location">"""),format.raw/*89.33*/("""{"""),format.raw/*89.34*/("""{"""),format.raw/*89.35*/("""ip"""),format.raw/*89.37*/("""}"""),format.raw/*89.38*/("""}"""),format.raw/*89.39*/("""</div>-->
+						<h1>IP ADDRESS """),format.raw/*89.22*/("""{"""),format.raw/*89.23*/("""{"""),format.raw/*89.24*/("""ip"""),format.raw/*89.26*/("""}"""),format.raw/*89.27*/("""}"""),format.raw/*89.28*/("""</h1>
+						<div class="location"></div>
 					</div>
-					<br />
-					<br />
-					<br />
 					<br />
 					<br />
 					
 					<div ng-repeat="result in processedDataIP" style="padding-top: 40px;" >
-
+						<br />
+						<br />
+						<br />
+						<br />
 						<div class="forecast-table">
 							<div class="container">
 								<div class="forecast-container">
 									<div class="today forecast">
 										<div class="forecast-header">
 											<div class="day">Time of Observation</div>
-											<div class="date">"""),format.raw/*105.30*/("""{"""),format.raw/*105.31*/("""{"""),format.raw/*105.32*/(""" result.LocalObservationDateTime """),format.raw/*105.65*/("""}"""),format.raw/*105.66*/("""}"""),format.raw/*105.67*/("""</div>
+											<div class="date">"""),format.raw/*106.30*/("""{"""),format.raw/*106.31*/("""{"""),format.raw/*106.32*/(""" result.LocalObservationDateTime """),format.raw/*106.65*/("""}"""),format.raw/*106.66*/("""}"""),format.raw/*106.67*/("""</div>
 										</div>
 										<br/> 
-										<div class="location" style="float:left; padding-left:20px;">IP Address: """),format.raw/*108.84*/("""{"""),format.raw/*108.85*/("""{"""),format.raw/*108.86*/("""ip"""),format.raw/*108.88*/("""}"""),format.raw/*108.89*/("""}"""),format.raw/*108.90*/("""</div>
+										<div class="location" style="float:left; padding-left:20px;">IP Address: """),format.raw/*109.84*/("""{"""),format.raw/*109.85*/("""{"""),format.raw/*109.86*/("""ip"""),format.raw/*109.88*/("""}"""),format.raw/*109.89*/("""}"""),format.raw/*109.90*/("""</div>
 										<!-- .forecast-header -->
 										<div class="" style="float: right; padding-right:20px;">
 
@@ -148,36 +149,36 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 										<br />
 										<div class="forecast-content">
 											
-											<div class="location">"""),format.raw/*123.34*/("""{"""),format.raw/*123.35*/("""{"""),format.raw/*123.36*/(""" result.name """),format.raw/*123.49*/("""}"""),format.raw/*123.50*/("""}"""),format.raw/*123.51*/("""</div>
-											<div class="location">Mostly """),format.raw/*124.41*/("""{"""),format.raw/*124.42*/("""{"""),format.raw/*124.43*/(""" result.WeatherText """),format.raw/*124.63*/("""}"""),format.raw/*124.64*/("""}"""),format.raw/*124.65*/("""</div>
+											<div class="location">"""),format.raw/*124.34*/("""{"""),format.raw/*124.35*/("""{"""),format.raw/*124.36*/(""" result.name """),format.raw/*124.49*/("""}"""),format.raw/*124.50*/("""}"""),format.raw/*124.51*/("""</div>
+											<div class="location">Mostly """),format.raw/*125.41*/("""{"""),format.raw/*125.42*/("""{"""),format.raw/*125.43*/(""" result.WeatherText """),format.raw/*125.63*/("""}"""),format.raw/*125.64*/("""}"""),format.raw/*125.65*/("""</div>
 											
-											<div class="location">Feels like: """),format.raw/*126.46*/("""{"""),format.raw/*126.47*/("""{"""),format.raw/*126.48*/(""" result.FeelsLikeMetric.Value """),format.raw/*126.78*/("""}"""),format.raw/*126.79*/("""}"""),format.raw/*126.80*/(""" C | """),format.raw/*126.85*/("""{"""),format.raw/*126.86*/("""{"""),format.raw/*126.87*/(""" result.FeelsLikeImperial.Value """),format.raw/*126.119*/("""}"""),format.raw/*126.120*/("""}"""),format.raw/*126.121*/(""" F</div>
-											<div class="location">Wind chill: """),format.raw/*127.46*/("""{"""),format.raw/*127.47*/("""{"""),format.raw/*127.48*/(""" result.WindChillTemperatureMetric.Value """),format.raw/*127.89*/("""}"""),format.raw/*127.90*/("""}"""),format.raw/*127.91*/(""" C | """),format.raw/*127.96*/("""{"""),format.raw/*127.97*/("""{"""),format.raw/*127.98*/(""" result.WindChillTemperatureImperial.Value """),format.raw/*127.141*/("""}"""),format.raw/*127.142*/("""}"""),format.raw/*127.143*/(""" F</div>
-											<div class="location">Raining?: """),format.raw/*128.44*/("""{"""),format.raw/*128.45*/("""{"""),format.raw/*128.46*/(""" result.HasPrecipitationString """),format.raw/*128.77*/("""}"""),format.raw/*128.78*/("""}"""),format.raw/*128.79*/("""</div>
-											<div class="location">Day time?: """),format.raw/*129.45*/("""{"""),format.raw/*129.46*/("""{"""),format.raw/*129.47*/(""" result.IsDayTimeString """),format.raw/*129.71*/("""}"""),format.raw/*129.72*/("""}"""),format.raw/*129.73*/("""</div>
-											<div class="location">Humidity: """),format.raw/*130.44*/("""{"""),format.raw/*130.45*/("""{"""),format.raw/*130.46*/(""" result.RelativeHumidity """),format.raw/*130.71*/("""}"""),format.raw/*130.72*/("""}"""),format.raw/*130.73*/("""%</div>
+											<div class="location">Feels like: """),format.raw/*127.46*/("""{"""),format.raw/*127.47*/("""{"""),format.raw/*127.48*/(""" result.FeelsLikeMetric.Value """),format.raw/*127.78*/("""}"""),format.raw/*127.79*/("""}"""),format.raw/*127.80*/(""" C | """),format.raw/*127.85*/("""{"""),format.raw/*127.86*/("""{"""),format.raw/*127.87*/(""" result.FeelsLikeImperial.Value """),format.raw/*127.119*/("""}"""),format.raw/*127.120*/("""}"""),format.raw/*127.121*/(""" F</div>
+											<div class="location">Wind chill: """),format.raw/*128.46*/("""{"""),format.raw/*128.47*/("""{"""),format.raw/*128.48*/(""" result.WindChillTemperatureMetric.Value """),format.raw/*128.89*/("""}"""),format.raw/*128.90*/("""}"""),format.raw/*128.91*/(""" C | """),format.raw/*128.96*/("""{"""),format.raw/*128.97*/("""{"""),format.raw/*128.98*/(""" result.WindChillTemperatureImperial.Value """),format.raw/*128.141*/("""}"""),format.raw/*128.142*/("""}"""),format.raw/*128.143*/(""" F</div>
+											<div class="location">Raining?: """),format.raw/*129.44*/("""{"""),format.raw/*129.45*/("""{"""),format.raw/*129.46*/(""" result.HasPrecipitationString """),format.raw/*129.77*/("""}"""),format.raw/*129.78*/("""}"""),format.raw/*129.79*/("""</div>
+											<div class="location">Day time?: """),format.raw/*130.45*/("""{"""),format.raw/*130.46*/("""{"""),format.raw/*130.47*/(""" result.IsDayTimeString """),format.raw/*130.71*/("""}"""),format.raw/*130.72*/("""}"""),format.raw/*130.73*/("""</div>
+											<div class="location">Humidity: """),format.raw/*131.44*/("""{"""),format.raw/*131.45*/("""{"""),format.raw/*131.46*/(""" result.RelativeHumidity """),format.raw/*131.71*/("""}"""),format.raw/*131.72*/("""}"""),format.raw/*131.73*/("""%</div>
 											<br />
 											<br />
 											<div class="forecast-icon" style="text-align:center;">	
-												<img src=""""),_display_(Seq[Any](/*134.24*/routes/*134.30*/.Assets.at("images/icons/icon-1.svg"))),format.raw/*134.67*/("""" alt="" width=90>
+												<img src=""""),_display_(Seq[Any](/*135.24*/routes/*135.30*/.Assets.at("images/icons/icon-1.svg"))),format.raw/*135.67*/("""" alt="" width=90>
 												
 											</div>
 											
 											<div class="degree" style="text-align: center; word-break: break-all; margin-right:0px;">			
 												<div class="num" style="margin-right:0px!important;">
-													<span ng-show="temp == 'c'" style="margin-right:0px!important;">"""),format.raw/*140.78*/("""{"""),format.raw/*140.79*/("""{"""),format.raw/*140.80*/("""result.metric.Value"""),format.raw/*140.99*/("""}"""),format.raw/*140.100*/("""}"""),format.raw/*140.101*/("""<sup>o</sup>C</span>
-							      					<span ng-show="temp == 'f'" style="margin-right:0px!important;">"""),format.raw/*141.83*/("""{"""),format.raw/*141.84*/("""{"""),format.raw/*141.85*/("""result.imperial.Value"""),format.raw/*141.106*/("""}"""),format.raw/*141.107*/("""}"""),format.raw/*141.108*/("""<sup>o</sup>F</span>
+													<span ng-show="temp == 'c'" style="margin-right:0px!important;">"""),format.raw/*141.78*/("""{"""),format.raw/*141.79*/("""{"""),format.raw/*141.80*/("""result.metric.Value"""),format.raw/*141.99*/("""}"""),format.raw/*141.100*/("""}"""),format.raw/*141.101*/("""<sup>o</sup>C</span>
+							      					<span ng-show="temp == 'f'" style="margin-right:0px!important;">"""),format.raw/*142.83*/("""{"""),format.raw/*142.84*/("""{"""),format.raw/*142.85*/("""result.imperial.Value"""),format.raw/*142.106*/("""}"""),format.raw/*142.107*/("""}"""),format.raw/*142.108*/("""<sup>o</sup>F</span>
 													
 													<br/> 
 													
 												</div>
 											</div>
 											<br />
-											<span><img src=""""),_display_(Seq[Any](/*148.29*/routes/*148.35*/.Assets.at("images/icon-umberella.png"))),format.raw/*148.74*/("""" alt="">"""),format.raw/*148.83*/("""{"""),format.raw/*148.84*/("""{"""),format.raw/*148.85*/("""result.PrecipitationProbability"""),format.raw/*148.116*/("""}"""),format.raw/*148.117*/("""}"""),format.raw/*148.118*/("""%</span>
-											<span><img src=""""),_display_(Seq[Any](/*149.29*/routes/*149.35*/.Assets.at("images/icon-wind.png"))),format.raw/*149.69*/("""" alt="">"""),format.raw/*149.78*/("""{"""),format.raw/*149.79*/("""{"""),format.raw/*149.80*/(""" result.WindSpeedMetric.Value """),format.raw/*149.110*/("""}"""),format.raw/*149.111*/("""}"""),format.raw/*149.112*/(""" km/h / """),format.raw/*149.120*/("""{"""),format.raw/*149.121*/("""{"""),format.raw/*149.122*/(""" result.WindSpeedImperial.Value """),format.raw/*149.154*/("""}"""),format.raw/*149.155*/("""}"""),format.raw/*149.156*/(""" mi/h </span>
-											<span><img src=""""),_display_(Seq[Any](/*150.29*/routes/*150.35*/.Assets.at("images/icon-compass.png"))),format.raw/*150.72*/("""" alt="">"""),format.raw/*150.81*/("""{"""),format.raw/*150.82*/("""{"""),format.raw/*150.83*/(""" result.WindDirectionEnglish """),format.raw/*150.112*/("""}"""),format.raw/*150.113*/("""}"""),format.raw/*150.114*/("""</span>
+											<span><img src=""""),_display_(Seq[Any](/*149.29*/routes/*149.35*/.Assets.at("images/icon-umberella.png"))),format.raw/*149.74*/("""" alt="">"""),format.raw/*149.83*/("""{"""),format.raw/*149.84*/("""{"""),format.raw/*149.85*/("""result.PrecipitationProbability"""),format.raw/*149.116*/("""}"""),format.raw/*149.117*/("""}"""),format.raw/*149.118*/("""%</span>
+											<span><img src=""""),_display_(Seq[Any](/*150.29*/routes/*150.35*/.Assets.at("images/icon-wind.png"))),format.raw/*150.69*/("""" alt="">"""),format.raw/*150.78*/("""{"""),format.raw/*150.79*/("""{"""),format.raw/*150.80*/(""" result.WindSpeedMetric.Value """),format.raw/*150.110*/("""}"""),format.raw/*150.111*/("""}"""),format.raw/*150.112*/(""" km/h / """),format.raw/*150.120*/("""{"""),format.raw/*150.121*/("""{"""),format.raw/*150.122*/(""" result.WindSpeedImperial.Value """),format.raw/*150.154*/("""}"""),format.raw/*150.155*/("""}"""),format.raw/*150.156*/(""" mi/h </span>
+											<span><img src=""""),_display_(Seq[Any](/*151.29*/routes/*151.35*/.Assets.at("images/icon-compass.png"))),format.raw/*151.72*/("""" alt="">"""),format.raw/*151.81*/("""{"""),format.raw/*151.82*/("""{"""),format.raw/*151.83*/(""" result.WindDirectionEnglish """),format.raw/*151.112*/("""}"""),format.raw/*151.113*/("""}"""),format.raw/*151.114*/("""</span>
 											
-											<div><br />More info <a target="_blank" href=""""),format.raw/*152.58*/("""{"""),format.raw/*152.59*/("""{"""),format.raw/*152.60*/(""" result.MobileLink """),format.raw/*152.79*/("""}"""),format.raw/*152.80*/("""}"""),format.raw/*152.81*/("""">"""),format.raw/*152.83*/("""{"""),format.raw/*152.84*/("""{"""),format.raw/*152.85*/(""" result.MobileLink """),format.raw/*152.104*/("""}"""),format.raw/*152.105*/("""}"""),format.raw/*152.106*/("""</a></div>
+											<div><br />More info <a target="_blank" href=""""),format.raw/*153.58*/("""{"""),format.raw/*153.59*/("""{"""),format.raw/*153.60*/(""" result.MobileLink """),format.raw/*153.79*/("""}"""),format.raw/*153.80*/("""}"""),format.raw/*153.81*/("""">"""),format.raw/*153.83*/("""{"""),format.raw/*153.84*/("""{"""),format.raw/*153.85*/(""" result.MobileLink """),format.raw/*153.104*/("""}"""),format.raw/*153.105*/("""}"""),format.raw/*153.106*/("""</a></div>
 										</div>
 									</div>
 								</div>
@@ -207,7 +208,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 									<div class="today forecast">
 										<div class="forecast-header">
 											<div class="day">Time of Observation</div>
-											<div class="date">"""),format.raw/*182.30*/("""{"""),format.raw/*182.31*/("""{"""),format.raw/*182.32*/(""" result.LocalObservationDateTime """),format.raw/*182.65*/("""}"""),format.raw/*182.66*/("""}"""),format.raw/*182.67*/("""</div>
+											<div class="date">"""),format.raw/*183.30*/("""{"""),format.raw/*183.31*/("""{"""),format.raw/*183.32*/(""" result.LocalObservationDateTime """),format.raw/*183.65*/("""}"""),format.raw/*183.66*/("""}"""),format.raw/*183.67*/("""</div>
 										</div>
 										<br/> 
 										
@@ -222,35 +223,35 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 							      			
 										</div>
 										<div class="forecast-content">
-											<div class="location">"""),format.raw/*197.34*/("""{"""),format.raw/*197.35*/("""{"""),format.raw/*197.36*/(""" result.name """),format.raw/*197.49*/("""}"""),format.raw/*197.50*/("""}"""),format.raw/*197.51*/("""</div>
-											<div class="location">Mostly """),format.raw/*198.41*/("""{"""),format.raw/*198.42*/("""{"""),format.raw/*198.43*/(""" result.WeatherText """),format.raw/*198.63*/("""}"""),format.raw/*198.64*/("""}"""),format.raw/*198.65*/("""</div>
-											<div class="location">Feels like: """),format.raw/*199.46*/("""{"""),format.raw/*199.47*/("""{"""),format.raw/*199.48*/(""" result.FeelsLikeMetric.Value """),format.raw/*199.78*/("""}"""),format.raw/*199.79*/("""}"""),format.raw/*199.80*/(""" C | """),format.raw/*199.85*/("""{"""),format.raw/*199.86*/("""{"""),format.raw/*199.87*/(""" result.FeelsLikeImperial.Value """),format.raw/*199.119*/("""}"""),format.raw/*199.120*/("""}"""),format.raw/*199.121*/(""" F</div>
-											<div class="location">Wind chill: """),format.raw/*200.46*/("""{"""),format.raw/*200.47*/("""{"""),format.raw/*200.48*/(""" result.WindChillTemperatureMetric.Value """),format.raw/*200.89*/("""}"""),format.raw/*200.90*/("""}"""),format.raw/*200.91*/(""" C | """),format.raw/*200.96*/("""{"""),format.raw/*200.97*/("""{"""),format.raw/*200.98*/(""" result.WindChillTemperatureImperial.Value """),format.raw/*200.141*/("""}"""),format.raw/*200.142*/("""}"""),format.raw/*200.143*/(""" F</div>
-											<div class="location">Raining?: """),format.raw/*201.44*/("""{"""),format.raw/*201.45*/("""{"""),format.raw/*201.46*/(""" result.HasPrecipitationString """),format.raw/*201.77*/("""}"""),format.raw/*201.78*/("""}"""),format.raw/*201.79*/("""</div>
-											<div class="location">Day time?: """),format.raw/*202.45*/("""{"""),format.raw/*202.46*/("""{"""),format.raw/*202.47*/(""" result.IsDayTimeString """),format.raw/*202.71*/("""}"""),format.raw/*202.72*/("""}"""),format.raw/*202.73*/("""</div>
-											<div class="location">Humidity: """),format.raw/*203.44*/("""{"""),format.raw/*203.45*/("""{"""),format.raw/*203.46*/(""" result.RelativeHumidity """),format.raw/*203.71*/("""}"""),format.raw/*203.72*/("""}"""),format.raw/*203.73*/("""%</div>
+											<div class="location">"""),format.raw/*198.34*/("""{"""),format.raw/*198.35*/("""{"""),format.raw/*198.36*/(""" result.name """),format.raw/*198.49*/("""}"""),format.raw/*198.50*/("""}"""),format.raw/*198.51*/("""</div>
+											<div class="location">Mostly """),format.raw/*199.41*/("""{"""),format.raw/*199.42*/("""{"""),format.raw/*199.43*/(""" result.WeatherText """),format.raw/*199.63*/("""}"""),format.raw/*199.64*/("""}"""),format.raw/*199.65*/("""</div>
+											<div class="location">Feels like: """),format.raw/*200.46*/("""{"""),format.raw/*200.47*/("""{"""),format.raw/*200.48*/(""" result.FeelsLikeMetric.Value """),format.raw/*200.78*/("""}"""),format.raw/*200.79*/("""}"""),format.raw/*200.80*/(""" C | """),format.raw/*200.85*/("""{"""),format.raw/*200.86*/("""{"""),format.raw/*200.87*/(""" result.FeelsLikeImperial.Value """),format.raw/*200.119*/("""}"""),format.raw/*200.120*/("""}"""),format.raw/*200.121*/(""" F</div>
+											<div class="location">Wind chill: """),format.raw/*201.46*/("""{"""),format.raw/*201.47*/("""{"""),format.raw/*201.48*/(""" result.WindChillTemperatureMetric.Value """),format.raw/*201.89*/("""}"""),format.raw/*201.90*/("""}"""),format.raw/*201.91*/(""" C | """),format.raw/*201.96*/("""{"""),format.raw/*201.97*/("""{"""),format.raw/*201.98*/(""" result.WindChillTemperatureImperial.Value """),format.raw/*201.141*/("""}"""),format.raw/*201.142*/("""}"""),format.raw/*201.143*/(""" F</div>
+											<div class="location">Raining?: """),format.raw/*202.44*/("""{"""),format.raw/*202.45*/("""{"""),format.raw/*202.46*/(""" result.HasPrecipitationString """),format.raw/*202.77*/("""}"""),format.raw/*202.78*/("""}"""),format.raw/*202.79*/("""</div>
+											<div class="location">Day time?: """),format.raw/*203.45*/("""{"""),format.raw/*203.46*/("""{"""),format.raw/*203.47*/(""" result.IsDayTimeString """),format.raw/*203.71*/("""}"""),format.raw/*203.72*/("""}"""),format.raw/*203.73*/("""</div>
+											<div class="location">Humidity: """),format.raw/*204.44*/("""{"""),format.raw/*204.45*/("""{"""),format.raw/*204.46*/(""" result.RelativeHumidity """),format.raw/*204.71*/("""}"""),format.raw/*204.72*/("""}"""),format.raw/*204.73*/("""%</div>
 											<br />
 											<br />
 											<div class="forecast-icon" style="text-align:center;">	
-												<img src=""""),_display_(Seq[Any](/*207.24*/routes/*207.30*/.Assets.at("images/icons/icon-1.svg"))),format.raw/*207.67*/("""" alt="" width=90>
+												<img src=""""),_display_(Seq[Any](/*208.24*/routes/*208.30*/.Assets.at("images/icons/icon-1.svg"))),format.raw/*208.67*/("""" alt="" width=90>
 												
 											</div>
 											
 											<div class="degree" style="text-align: center; word-break: break-all; margin-right:0px;">			
 												<div class="num" style="margin-right:0px!important;">
-													<span ng-show="temp == 'c'" style="margin-right:0px!important;">"""),format.raw/*213.78*/("""{"""),format.raw/*213.79*/("""{"""),format.raw/*213.80*/("""result.metric.Value"""),format.raw/*213.99*/("""}"""),format.raw/*213.100*/("""}"""),format.raw/*213.101*/("""<sup>o</sup>C</span>
-							      					<span ng-show="temp == 'f'" style="margin-right:0px!important;">"""),format.raw/*214.83*/("""{"""),format.raw/*214.84*/("""{"""),format.raw/*214.85*/("""result.imperial.Value"""),format.raw/*214.106*/("""}"""),format.raw/*214.107*/("""}"""),format.raw/*214.108*/("""<sup>o</sup>F</span>
+													<span ng-show="temp == 'c'" style="margin-right:0px!important;">"""),format.raw/*214.78*/("""{"""),format.raw/*214.79*/("""{"""),format.raw/*214.80*/("""result.metric.Value"""),format.raw/*214.99*/("""}"""),format.raw/*214.100*/("""}"""),format.raw/*214.101*/("""<sup>o</sup>C</span>
+							      					<span ng-show="temp == 'f'" style="margin-right:0px!important;">"""),format.raw/*215.83*/("""{"""),format.raw/*215.84*/("""{"""),format.raw/*215.85*/("""result.imperial.Value"""),format.raw/*215.106*/("""}"""),format.raw/*215.107*/("""}"""),format.raw/*215.108*/("""<sup>o</sup>F</span>
 													
 													<br/> 
 													
 												</div>
 											</div>
 											<br />
-											<span><img src=""""),_display_(Seq[Any](/*221.29*/routes/*221.35*/.Assets.at("images/icon-umberella.png"))),format.raw/*221.74*/("""" alt="">"""),format.raw/*221.83*/("""{"""),format.raw/*221.84*/("""{"""),format.raw/*221.85*/("""result.PrecipitationProbability"""),format.raw/*221.116*/("""}"""),format.raw/*221.117*/("""}"""),format.raw/*221.118*/("""%</span>
-											<span><img src=""""),_display_(Seq[Any](/*222.29*/routes/*222.35*/.Assets.at("images/icon-wind.png"))),format.raw/*222.69*/("""" alt="">"""),format.raw/*222.78*/("""{"""),format.raw/*222.79*/("""{"""),format.raw/*222.80*/(""" result.WindSpeedMetric.Value """),format.raw/*222.110*/("""}"""),format.raw/*222.111*/("""}"""),format.raw/*222.112*/(""" km/h / """),format.raw/*222.120*/("""{"""),format.raw/*222.121*/("""{"""),format.raw/*222.122*/(""" result.WindSpeedImperial.Value """),format.raw/*222.154*/("""}"""),format.raw/*222.155*/("""}"""),format.raw/*222.156*/(""" mi/h </span>
-											<span><img src=""""),_display_(Seq[Any](/*223.29*/routes/*223.35*/.Assets.at("images/icon-compass.png"))),format.raw/*223.72*/("""" alt="">"""),format.raw/*223.81*/("""{"""),format.raw/*223.82*/("""{"""),format.raw/*223.83*/(""" result.WindDirectionEnglish """),format.raw/*223.112*/("""}"""),format.raw/*223.113*/("""}"""),format.raw/*223.114*/("""</span>
+											<span><img src=""""),_display_(Seq[Any](/*222.29*/routes/*222.35*/.Assets.at("images/icon-umberella.png"))),format.raw/*222.74*/("""" alt="">"""),format.raw/*222.83*/("""{"""),format.raw/*222.84*/("""{"""),format.raw/*222.85*/("""result.PrecipitationProbability"""),format.raw/*222.116*/("""}"""),format.raw/*222.117*/("""}"""),format.raw/*222.118*/("""%</span>
+											<span><img src=""""),_display_(Seq[Any](/*223.29*/routes/*223.35*/.Assets.at("images/icon-wind.png"))),format.raw/*223.69*/("""" alt="">"""),format.raw/*223.78*/("""{"""),format.raw/*223.79*/("""{"""),format.raw/*223.80*/(""" result.WindSpeedMetric.Value """),format.raw/*223.110*/("""}"""),format.raw/*223.111*/("""}"""),format.raw/*223.112*/(""" km/h / """),format.raw/*223.120*/("""{"""),format.raw/*223.121*/("""{"""),format.raw/*223.122*/(""" result.WindSpeedImperial.Value """),format.raw/*223.154*/("""}"""),format.raw/*223.155*/("""}"""),format.raw/*223.156*/(""" mi/h </span>
+											<span><img src=""""),_display_(Seq[Any](/*224.29*/routes/*224.35*/.Assets.at("images/icon-compass.png"))),format.raw/*224.72*/("""" alt="">"""),format.raw/*224.81*/("""{"""),format.raw/*224.82*/("""{"""),format.raw/*224.83*/(""" result.WindDirectionEnglish """),format.raw/*224.112*/("""}"""),format.raw/*224.113*/("""}"""),format.raw/*224.114*/("""</span>
 											
-											<div><br />More info <a target="_blank" href=""""),format.raw/*225.58*/("""{"""),format.raw/*225.59*/("""{"""),format.raw/*225.60*/(""" result.MobileLink """),format.raw/*225.79*/("""}"""),format.raw/*225.80*/("""}"""),format.raw/*225.81*/("""">"""),format.raw/*225.83*/("""{"""),format.raw/*225.84*/("""{"""),format.raw/*225.85*/(""" result.MobileLink """),format.raw/*225.104*/("""}"""),format.raw/*225.105*/("""}"""),format.raw/*225.106*/("""</a></div>
+											<div><br />More info <a target="_blank" href=""""),format.raw/*226.58*/("""{"""),format.raw/*226.59*/("""{"""),format.raw/*226.60*/(""" result.MobileLink """),format.raw/*226.79*/("""}"""),format.raw/*226.80*/("""}"""),format.raw/*226.81*/("""">"""),format.raw/*226.83*/("""{"""),format.raw/*226.84*/("""{"""),format.raw/*226.85*/(""" result.MobileLink """),format.raw/*226.104*/("""}"""),format.raw/*226.105*/("""}"""),format.raw/*226.106*/("""</a></div>
 										</div>
 									</div>
 								</div>
@@ -260,10 +261,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 					</div>
 					<!--
 					<h1>Forecast JSON Response</h1>
-					<pre>"""),format.raw/*235.11*/("""{"""),format.raw/*235.12*/("""{"""),format.raw/*235.13*/("""forecast | json"""),format.raw/*235.28*/("""}"""),format.raw/*235.29*/("""}"""),format.raw/*235.30*/("""</pre>
+					<pre>"""),format.raw/*236.11*/("""{"""),format.raw/*236.12*/("""{"""),format.raw/*236.13*/("""forecast | json"""),format.raw/*236.28*/("""}"""),format.raw/*236.29*/("""}"""),format.raw/*236.30*/("""</pre>
 					-->
 					<h1>ACCUWEATHER JSON RESPONSE</h1> 
-					<pre>"""),format.raw/*238.11*/("""{"""),format.raw/*238.12*/("""{"""),format.raw/*238.13*/("""processedData | json"""),format.raw/*238.33*/("""}"""),format.raw/*238.34*/("""}"""),format.raw/*238.35*/("""</pre>
+					<pre>"""),format.raw/*239.11*/("""{"""),format.raw/*239.12*/("""{"""),format.raw/*239.13*/("""processedData | json"""),format.raw/*239.33*/("""}"""),format.raw/*239.34*/("""}"""),format.raw/*239.35*/("""</pre>
 					<br />
 					<br />
 					<br />
@@ -302,33 +303,33 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						</thead>
 						
 						<tbody>
-						  <tr ng-repeat="result in processedData" ng-class=""""),format.raw/*277.59*/("""{"""),format.raw/*277.60*/("""'text-danger': result.error"""),format.raw/*277.87*/("""}"""),format.raw/*277.88*/("""">
+						  <tr ng-repeat="result in processedData" ng-class=""""),format.raw/*278.59*/("""{"""),format.raw/*278.60*/("""'text-danger': result.error"""),format.raw/*278.87*/("""}"""),format.raw/*278.88*/("""">
 							
 						    <td>
-						      """),format.raw/*280.13*/("""{"""),format.raw/*280.14*/("""{"""),format.raw/*280.15*/(""" result.name """),format.raw/*280.28*/("""}"""),format.raw/*280.29*/("""}"""),format.raw/*280.30*/("""
+						      """),format.raw/*281.13*/("""{"""),format.raw/*281.14*/("""{"""),format.raw/*281.15*/(""" result.name """),format.raw/*281.28*/("""}"""),format.raw/*281.29*/("""}"""),format.raw/*281.30*/("""
 						    </td>
 						    <td>
-						      <span ng-show="temp == 'c'">"""),format.raw/*283.41*/("""{"""),format.raw/*283.42*/("""{"""),format.raw/*283.43*/("""result.metric.Value"""),format.raw/*283.62*/("""}"""),format.raw/*283.63*/("""}"""),format.raw/*283.64*/(""" C</span>
-						      <span ng-show="temp == 'f'">"""),format.raw/*284.41*/("""{"""),format.raw/*284.42*/("""{"""),format.raw/*284.43*/("""result.imperial.Value"""),format.raw/*284.64*/("""}"""),format.raw/*284.65*/("""}"""),format.raw/*284.66*/(""" F</span>
+						      <span ng-show="temp == 'c'">"""),format.raw/*284.41*/("""{"""),format.raw/*284.42*/("""{"""),format.raw/*284.43*/("""result.metric.Value"""),format.raw/*284.62*/("""}"""),format.raw/*284.63*/("""}"""),format.raw/*284.64*/(""" C</span>
+						      <span ng-show="temp == 'f'">"""),format.raw/*285.41*/("""{"""),format.raw/*285.42*/("""{"""),format.raw/*285.43*/("""result.imperial.Value"""),format.raw/*285.64*/("""}"""),format.raw/*285.65*/("""}"""),format.raw/*285.66*/(""" F</span>
 							</td>
 							<td>
-								"""),format.raw/*287.9*/("""{"""),format.raw/*287.10*/("""{"""),format.raw/*287.11*/(""" result.WeatherText """),format.raw/*287.31*/("""}"""),format.raw/*287.32*/("""}"""),format.raw/*287.33*/("""
+								"""),format.raw/*288.9*/("""{"""),format.raw/*288.10*/("""{"""),format.raw/*288.11*/(""" result.WeatherText """),format.raw/*288.31*/("""}"""),format.raw/*288.32*/("""}"""),format.raw/*288.33*/("""
 							</td>
 							<td>
-								"""),format.raw/*290.9*/("""{"""),format.raw/*290.10*/("""{"""),format.raw/*290.11*/(""" result.IsDayTime """),format.raw/*290.29*/("""}"""),format.raw/*290.30*/("""}"""),format.raw/*290.31*/("""
+								"""),format.raw/*291.9*/("""{"""),format.raw/*291.10*/("""{"""),format.raw/*291.11*/(""" result.IsDayTime """),format.raw/*291.29*/("""}"""),format.raw/*291.30*/("""}"""),format.raw/*291.31*/("""
 							</td>
 							<td>
-								"""),format.raw/*293.9*/("""{"""),format.raw/*293.10*/("""{"""),format.raw/*293.11*/(""" result.HasPrecipitation """),format.raw/*293.36*/("""}"""),format.raw/*293.37*/("""}"""),format.raw/*293.38*/("""
+								"""),format.raw/*294.9*/("""{"""),format.raw/*294.10*/("""{"""),format.raw/*294.11*/(""" result.HasPrecipitation """),format.raw/*294.36*/("""}"""),format.raw/*294.37*/("""}"""),format.raw/*294.38*/("""
 							</td>
 							<td>
-								"""),format.raw/*296.9*/("""{"""),format.raw/*296.10*/("""{"""),format.raw/*296.11*/(""" result.HasPrecipitationString """),format.raw/*296.42*/("""}"""),format.raw/*296.43*/("""}"""),format.raw/*296.44*/("""
+								"""),format.raw/*297.9*/("""{"""),format.raw/*297.10*/("""{"""),format.raw/*297.11*/(""" result.HasPrecipitationString """),format.raw/*297.42*/("""}"""),format.raw/*297.43*/("""}"""),format.raw/*297.44*/("""
 							</td>
 							<td>
-								"""),format.raw/*299.9*/("""{"""),format.raw/*299.10*/("""{"""),format.raw/*299.11*/(""" result.LocalObservationDateTime """),format.raw/*299.44*/("""}"""),format.raw/*299.45*/("""}"""),format.raw/*299.46*/("""
+								"""),format.raw/*300.9*/("""{"""),format.raw/*300.10*/("""{"""),format.raw/*300.11*/(""" result.LocalObservationDateTime """),format.raw/*300.44*/("""}"""),format.raw/*300.45*/("""}"""),format.raw/*300.46*/("""
 							</td>
 							<td style="word-break: break-all;">
 								<span style="max-width:100%;">
-									<a target="_blank" href=""""),format.raw/*303.35*/("""{"""),format.raw/*303.36*/("""{"""),format.raw/*303.37*/(""" result.MobileLink """),format.raw/*303.56*/("""}"""),format.raw/*303.57*/("""}"""),format.raw/*303.58*/("""">"""),format.raw/*303.60*/("""{"""),format.raw/*303.61*/("""{"""),format.raw/*303.62*/(""" result.MobileLink """),format.raw/*303.81*/("""}"""),format.raw/*303.82*/("""}"""),format.raw/*303.83*/("""</a>
+									<a target="_blank" href=""""),format.raw/*304.35*/("""{"""),format.raw/*304.36*/("""{"""),format.raw/*304.37*/(""" result.MobileLink """),format.raw/*304.56*/("""}"""),format.raw/*304.57*/("""}"""),format.raw/*304.58*/("""">"""),format.raw/*304.60*/("""{"""),format.raw/*304.61*/("""{"""),format.raw/*304.62*/(""" result.MobileLink """),format.raw/*304.81*/("""}"""),format.raw/*304.82*/("""}"""),format.raw/*304.83*/("""</a>
 								</span>
 							</td>
 							
@@ -351,12 +352,12 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						                        <input data-ng-model="url" type="text" class="form-control" id="zipcode" size="80" placeholder="ZipCode">
 						                    </span>
 						                    <button style="width: 20%; min-width: 80px;" data-ng-click="fetch()" type="submit" class="btn btn-primary">Search!</button>
-						                    <span data-ng-show="message" class="alert"><span class="glyphicon glyphicon-arrow-left">&nbsp;</span>"""),format.raw/*326.128*/("""{"""),format.raw/*326.129*/("""{"""),format.raw/*326.130*/("""message"""),format.raw/*326.137*/("""}"""),format.raw/*326.138*/("""}"""),format.raw/*326.139*/("""</span>
+						                    <span data-ng-show="message" class="alert"><span class="glyphicon glyphicon-arrow-left">&nbsp;</span>"""),format.raw/*327.128*/("""{"""),format.raw/*327.129*/("""{"""),format.raw/*327.130*/("""message"""),format.raw/*327.137*/("""}"""),format.raw/*327.138*/("""}"""),format.raw/*327.139*/("""</span>
 						                </form>
 						                <br />
 								      	<br />
-								      	<pre>http status code: """),format.raw/*330.39*/("""{"""),format.raw/*330.40*/("""{"""),format.raw/*330.41*/("""status"""),format.raw/*330.47*/("""}"""),format.raw/*330.48*/("""}"""),format.raw/*330.49*/("""</pre>
-								      	<pre>http response data: """),format.raw/*331.41*/("""{"""),format.raw/*331.42*/("""{"""),format.raw/*331.43*/("""data"""),format.raw/*331.47*/("""}"""),format.raw/*331.48*/("""}"""),format.raw/*331.49*/("""</pre>
+								      	<pre>http status code: """),format.raw/*331.39*/("""{"""),format.raw/*331.40*/("""{"""),format.raw/*331.41*/("""status"""),format.raw/*331.47*/("""}"""),format.raw/*331.48*/("""}"""),format.raw/*331.49*/("""</pre>
+								      	<pre>http response data: """),format.raw/*332.41*/("""{"""),format.raw/*332.42*/("""{"""),format.raw/*332.43*/("""data"""),format.raw/*332.47*/("""}"""),format.raw/*332.48*/("""}"""),format.raw/*332.49*/("""</pre>
 						            </div>
 						        </div>
 						    </div>
@@ -389,22 +390,25 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 	 	<!-- Google Universal Analytics -->
 	 	<!--
 	 	<script>
-		  (function(i,s,o,g,r,a,m)"""),format.raw/*364.29*/("""{"""),format.raw/*364.30*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*364.80*/("""{"""),format.raw/*364.81*/("""
-		  (i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*365.40*/("""}"""),format.raw/*365.41*/(""",i[r].l=1*new Date();a=s.createElement(o),
+		  (function(i,s,o,g,r,a,m)"""),format.raw/*365.29*/("""{"""),format.raw/*365.30*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*365.80*/("""{"""),format.raw/*365.81*/("""
+		  (i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*366.40*/("""}"""),format.raw/*366.41*/(""",i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  """),format.raw/*367.5*/("""}"""),format.raw/*367.6*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  """),format.raw/*368.5*/("""}"""),format.raw/*368.6*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
 		  ga('create', 'UA-46957200-1', 'sleepy-garden-8606.herokuapp.com');
 		  ga('send', 'pageview');
 		
 		</script>
 		-->
-	 	<script src=""""),_display_(Seq[Any](/*374.18*/routes/*374.24*/.Assets.at("third/jquery/jquery-1.10.2.min.js"))),format.raw/*374.71*/("""" type="text/javascript"></script>
-		<script src=""""),_display_(Seq[Any](/*375.17*/routes/*375.23*/.Assets.at("third/bootstrap/js/bootstrap.js"))),format.raw/*375.68*/("""" type="text/javascript"></script>
-		
-		
+	 	<script src=""""),_display_(Seq[Any](/*375.18*/routes/*375.24*/.Assets.at("third/jquery/jquery-1.10.2.min.js"))),format.raw/*375.71*/("""" type="text/javascript"></script>
+		<script src=""""),_display_(Seq[Any](/*376.17*/routes/*376.23*/.Assets.at("third/bootstrap/js/bootstrap.js"))),format.raw/*376.68*/("""" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js" type="text/javascript"></script>
+		<!--
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.js.js"></script>
+		-->
+		<!--
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js" type="text/javascript"></script>
-		
+		-->
 	 </body>
 </html>"""))}
     }
@@ -418,11 +422,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Dec 07 11:21:43 EST 2019
+                    DATE: Mon Dec 09 14:42:10 EST 2019
                     SOURCE: /Users/tajunker/Computer Engineering IUPUI/CSCI 240/Homework/termal/app/views/index.scala.html
-                    HASH: fcdddcfcd3ec46b8f594105560777907c694e1b1
-                    MATRIX: 855->0|1337->446|1352->452|1422->499|1511->552|1526->558|1607->616|1696->669|1711->675|1775->717|1864->770|1879->776|1968->842|2054->892|2069->898|2145->951|2231->1001|2246->1007|2302->1041|2393->1096|2408->1102|2462->1134|2518->1154|2533->1160|2599->1204|2686->1255|2701->1261|2776->1314|2863->1365|2878->1371|2933->1404|3976->2411|3991->2417|4061->2464|6138->4513|6167->4514|6196->4515|6226->4517|6255->4518|6284->4519|6747->4953|6777->4954|6807->4955|6869->4988|6899->4989|6929->4990|7082->5114|7112->5115|7142->5116|7173->5118|7203->5119|7233->5120|7735->5593|7765->5594|7795->5595|7837->5608|7867->5609|7897->5610|7973->5657|8003->5658|8033->5659|8082->5679|8112->5680|8142->5681|8235->5745|8265->5746|8295->5747|8354->5777|8384->5778|8414->5779|8448->5784|8478->5785|8508->5786|8570->5818|8601->5819|8632->5820|8715->5874|8745->5875|8775->5876|8845->5917|8875->5918|8905->5919|8939->5924|8969->5925|8999->5926|9072->5969|9103->5970|9134->5971|9215->6023|9245->6024|9275->6025|9335->6056|9365->6057|9395->6058|9475->6109|9505->6110|9535->6111|9588->6135|9618->6136|9648->6137|9727->6187|9757->6188|9787->6189|9841->6214|9871->6215|9901->6216|10072->6350|10088->6356|10148->6393|10486->6702|10516->6703|10546->6704|10594->6723|10625->6724|10656->6725|10788->6828|10818->6829|10848->6830|10899->6851|10930->6852|10961->6853|11150->7005|11166->7011|11228->7050|11266->7059|11296->7060|11326->7061|11387->7092|11418->7093|11449->7094|11523->7131|11539->7137|11596->7171|11634->7180|11664->7181|11694->7182|11754->7212|11785->7213|11816->7214|11854->7222|11885->7223|11916->7224|11978->7256|12009->7257|12040->7258|12119->7300|12135->7306|12195->7343|12233->7352|12263->7353|12293->7354|12352->7383|12383->7384|12414->7385|12520->7462|12550->7463|12580->7464|12628->7483|12658->7484|12688->7485|12719->7487|12749->7488|12779->7489|12828->7508|12859->7509|12890->7510|13594->8185|13624->8186|13654->8187|13716->8220|13746->8221|13776->8222|14292->8709|14322->8710|14352->8711|14394->8724|14424->8725|14454->8726|14530->8773|14560->8774|14590->8775|14639->8795|14669->8796|14699->8797|14780->8849|14810->8850|14840->8851|14899->8881|14929->8882|14959->8883|14993->8888|15023->8889|15053->8890|15115->8922|15146->8923|15177->8924|15260->8978|15290->8979|15320->8980|15390->9021|15420->9022|15450->9023|15484->9028|15514->9029|15544->9030|15617->9073|15648->9074|15679->9075|15760->9127|15790->9128|15820->9129|15880->9160|15910->9161|15940->9162|16020->9213|16050->9214|16080->9215|16133->9239|16163->9240|16193->9241|16272->9291|16302->9292|16332->9293|16386->9318|16416->9319|16446->9320|16617->9454|16633->9460|16693->9497|17031->9806|17061->9807|17091->9808|17139->9827|17170->9828|17201->9829|17333->9932|17363->9933|17393->9934|17444->9955|17475->9956|17506->9957|17695->10109|17711->10115|17773->10154|17811->10163|17841->10164|17871->10165|17932->10196|17963->10197|17994->10198|18068->10235|18084->10241|18141->10275|18179->10284|18209->10285|18239->10286|18299->10316|18330->10317|18361->10318|18399->10326|18430->10327|18461->10328|18523->10360|18554->10361|18585->10362|18664->10404|18680->10410|18740->10447|18778->10456|18808->10457|18838->10458|18897->10487|18928->10488|18959->10489|19065->10566|19095->10567|19125->10568|19173->10587|19203->10588|19233->10589|19264->10591|19294->10592|19324->10593|19373->10612|19404->10613|19435->10614|19681->10831|19711->10832|19741->10833|19785->10848|19815->10849|19845->10850|19941->10917|19971->10918|20001->10919|20050->10939|20080->10940|20110->10941|21145->11947|21175->11948|21231->11975|21261->11976|21328->12014|21358->12015|21388->12016|21430->12029|21460->12030|21490->12031|21591->12103|21621->12104|21651->12105|21699->12124|21729->12125|21759->12126|21838->12176|21868->12177|21898->12178|21948->12199|21978->12200|22008->12201|22079->12244|22109->12245|22139->12246|22188->12266|22218->12267|22248->12268|22310->12302|22340->12303|22370->12304|22417->12322|22447->12323|22477->12324|22539->12358|22569->12359|22599->12360|22653->12385|22683->12386|22713->12387|22775->12421|22805->12422|22835->12423|22895->12454|22925->12455|22955->12456|23017->12490|23047->12491|23077->12492|23139->12525|23169->12526|23199->12527|23358->12657|23388->12658|23418->12659|23466->12678|23496->12679|23526->12680|23557->12682|23587->12683|23617->12684|23665->12703|23695->12704|23725->12705|24750->13700|24781->13701|24812->13702|24849->13709|24880->13710|24911->13711|25067->13838|25097->13839|25127->13840|25162->13846|25192->13847|25222->13848|25298->13895|25328->13896|25358->13897|25391->13901|25421->13902|25451->13903|27043->15467|27073->15468|27152->15518|27182->15519|27251->15559|27281->15560|27440->15691|27469->15692|27722->15908|27738->15914|27808->15961|27896->16012|27912->16018|27980->16063
-                    LINES: 29->1|40->12|40->12|40->12|41->13|41->13|41->13|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|50->22|50->22|68->40|68->40|68->40|117->89|117->89|117->89|117->89|117->89|117->89|133->105|133->105|133->105|133->105|133->105|133->105|136->108|136->108|136->108|136->108|136->108|136->108|151->123|151->123|151->123|151->123|151->123|151->123|152->124|152->124|152->124|152->124|152->124|152->124|154->126|154->126|154->126|154->126|154->126|154->126|154->126|154->126|154->126|154->126|154->126|154->126|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|156->128|156->128|156->128|156->128|156->128|156->128|157->129|157->129|157->129|157->129|157->129|157->129|158->130|158->130|158->130|158->130|158->130|158->130|162->134|162->134|162->134|168->140|168->140|168->140|168->140|168->140|168->140|169->141|169->141|169->141|169->141|169->141|169->141|176->148|176->148|176->148|176->148|176->148|176->148|176->148|176->148|176->148|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|180->152|180->152|180->152|180->152|180->152|180->152|180->152|180->152|180->152|180->152|180->152|180->152|210->182|210->182|210->182|210->182|210->182|210->182|225->197|225->197|225->197|225->197|225->197|225->197|226->198|226->198|226->198|226->198|226->198|226->198|227->199|227->199|227->199|227->199|227->199|227->199|227->199|227->199|227->199|227->199|227->199|227->199|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|229->201|229->201|229->201|229->201|229->201|229->201|230->202|230->202|230->202|230->202|230->202|230->202|231->203|231->203|231->203|231->203|231->203|231->203|235->207|235->207|235->207|241->213|241->213|241->213|241->213|241->213|241->213|242->214|242->214|242->214|242->214|242->214|242->214|249->221|249->221|249->221|249->221|249->221|249->221|249->221|249->221|249->221|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|253->225|253->225|253->225|253->225|253->225|253->225|253->225|253->225|253->225|253->225|253->225|253->225|263->235|263->235|263->235|263->235|263->235|263->235|266->238|266->238|266->238|266->238|266->238|266->238|305->277|305->277|305->277|305->277|308->280|308->280|308->280|308->280|308->280|308->280|311->283|311->283|311->283|311->283|311->283|311->283|312->284|312->284|312->284|312->284|312->284|312->284|315->287|315->287|315->287|315->287|315->287|315->287|318->290|318->290|318->290|318->290|318->290|318->290|321->293|321->293|321->293|321->293|321->293|321->293|324->296|324->296|324->296|324->296|324->296|324->296|327->299|327->299|327->299|327->299|327->299|327->299|331->303|331->303|331->303|331->303|331->303|331->303|331->303|331->303|331->303|331->303|331->303|331->303|354->326|354->326|354->326|354->326|354->326|354->326|358->330|358->330|358->330|358->330|358->330|358->330|359->331|359->331|359->331|359->331|359->331|359->331|392->364|392->364|392->364|392->364|393->365|393->365|395->367|395->367|402->374|402->374|402->374|403->375|403->375|403->375
+                    HASH: 1ac25c303d6c4ac06c2b1bed814e438bb674c76a
+                    MATRIX: 855->0|1337->446|1352->452|1422->499|1511->552|1526->558|1607->616|1696->669|1711->675|1775->717|1864->770|1879->776|1968->842|2054->892|2069->898|2145->951|2231->1001|2246->1007|2302->1041|2393->1096|2408->1102|2462->1134|2518->1154|2533->1160|2599->1204|2686->1255|2701->1261|2776->1314|2863->1365|2878->1371|2933->1404|4053->2488|4068->2494|4130->2533|4250->2617|4265->2623|4338->2673|6355->4662|6384->4663|6413->4664|6443->4666|6472->4667|6501->4668|7010->5148|7040->5149|7070->5150|7132->5183|7162->5184|7192->5185|7345->5309|7375->5310|7405->5311|7436->5313|7466->5314|7496->5315|7998->5788|8028->5789|8058->5790|8100->5803|8130->5804|8160->5805|8236->5852|8266->5853|8296->5854|8345->5874|8375->5875|8405->5876|8498->5940|8528->5941|8558->5942|8617->5972|8647->5973|8677->5974|8711->5979|8741->5980|8771->5981|8833->6013|8864->6014|8895->6015|8978->6069|9008->6070|9038->6071|9108->6112|9138->6113|9168->6114|9202->6119|9232->6120|9262->6121|9335->6164|9366->6165|9397->6166|9478->6218|9508->6219|9538->6220|9598->6251|9628->6252|9658->6253|9738->6304|9768->6305|9798->6306|9851->6330|9881->6331|9911->6332|9990->6382|10020->6383|10050->6384|10104->6409|10134->6410|10164->6411|10335->6545|10351->6551|10411->6588|10749->6897|10779->6898|10809->6899|10857->6918|10888->6919|10919->6920|11051->7023|11081->7024|11111->7025|11162->7046|11193->7047|11224->7048|11413->7200|11429->7206|11491->7245|11529->7254|11559->7255|11589->7256|11650->7287|11681->7288|11712->7289|11786->7326|11802->7332|11859->7366|11897->7375|11927->7376|11957->7377|12017->7407|12048->7408|12079->7409|12117->7417|12148->7418|12179->7419|12241->7451|12272->7452|12303->7453|12382->7495|12398->7501|12458->7538|12496->7547|12526->7548|12556->7549|12615->7578|12646->7579|12677->7580|12783->7657|12813->7658|12843->7659|12891->7678|12921->7679|12951->7680|12982->7682|13012->7683|13042->7684|13091->7703|13122->7704|13153->7705|13857->8380|13887->8381|13917->8382|13979->8415|14009->8416|14039->8417|14555->8904|14585->8905|14615->8906|14657->8919|14687->8920|14717->8921|14793->8968|14823->8969|14853->8970|14902->8990|14932->8991|14962->8992|15043->9044|15073->9045|15103->9046|15162->9076|15192->9077|15222->9078|15256->9083|15286->9084|15316->9085|15378->9117|15409->9118|15440->9119|15523->9173|15553->9174|15583->9175|15653->9216|15683->9217|15713->9218|15747->9223|15777->9224|15807->9225|15880->9268|15911->9269|15942->9270|16023->9322|16053->9323|16083->9324|16143->9355|16173->9356|16203->9357|16283->9408|16313->9409|16343->9410|16396->9434|16426->9435|16456->9436|16535->9486|16565->9487|16595->9488|16649->9513|16679->9514|16709->9515|16880->9649|16896->9655|16956->9692|17294->10001|17324->10002|17354->10003|17402->10022|17433->10023|17464->10024|17596->10127|17626->10128|17656->10129|17707->10150|17738->10151|17769->10152|17958->10304|17974->10310|18036->10349|18074->10358|18104->10359|18134->10360|18195->10391|18226->10392|18257->10393|18331->10430|18347->10436|18404->10470|18442->10479|18472->10480|18502->10481|18562->10511|18593->10512|18624->10513|18662->10521|18693->10522|18724->10523|18786->10555|18817->10556|18848->10557|18927->10599|18943->10605|19003->10642|19041->10651|19071->10652|19101->10653|19160->10682|19191->10683|19222->10684|19328->10761|19358->10762|19388->10763|19436->10782|19466->10783|19496->10784|19527->10786|19557->10787|19587->10788|19636->10807|19667->10808|19698->10809|19944->11026|19974->11027|20004->11028|20048->11043|20078->11044|20108->11045|20204->11112|20234->11113|20264->11114|20313->11134|20343->11135|20373->11136|21408->12142|21438->12143|21494->12170|21524->12171|21591->12209|21621->12210|21651->12211|21693->12224|21723->12225|21753->12226|21854->12298|21884->12299|21914->12300|21962->12319|21992->12320|22022->12321|22101->12371|22131->12372|22161->12373|22211->12394|22241->12395|22271->12396|22342->12439|22372->12440|22402->12441|22451->12461|22481->12462|22511->12463|22573->12497|22603->12498|22633->12499|22680->12517|22710->12518|22740->12519|22802->12553|22832->12554|22862->12555|22916->12580|22946->12581|22976->12582|23038->12616|23068->12617|23098->12618|23158->12649|23188->12650|23218->12651|23280->12685|23310->12686|23340->12687|23402->12720|23432->12721|23462->12722|23621->12852|23651->12853|23681->12854|23729->12873|23759->12874|23789->12875|23820->12877|23850->12878|23880->12879|23928->12898|23958->12899|23988->12900|25013->13895|25044->13896|25075->13897|25112->13904|25143->13905|25174->13906|25330->14033|25360->14034|25390->14035|25425->14041|25455->14042|25485->14043|25561->14090|25591->14091|25621->14092|25654->14096|25684->14097|25714->14098|27306->15662|27336->15663|27415->15713|27445->15714|27514->15754|27544->15755|27703->15886|27732->15887|27985->16103|28001->16109|28071->16156|28159->16207|28175->16213|28243->16258
+                    LINES: 29->1|40->12|40->12|40->12|41->13|41->13|41->13|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|50->22|50->22|69->41|69->41|69->41|70->42|70->42|70->42|117->89|117->89|117->89|117->89|117->89|117->89|134->106|134->106|134->106|134->106|134->106|134->106|137->109|137->109|137->109|137->109|137->109|137->109|152->124|152->124|152->124|152->124|152->124|152->124|153->125|153->125|153->125|153->125|153->125|153->125|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|155->127|156->128|156->128|156->128|156->128|156->128|156->128|156->128|156->128|156->128|156->128|156->128|156->128|157->129|157->129|157->129|157->129|157->129|157->129|158->130|158->130|158->130|158->130|158->130|158->130|159->131|159->131|159->131|159->131|159->131|159->131|163->135|163->135|163->135|169->141|169->141|169->141|169->141|169->141|169->141|170->142|170->142|170->142|170->142|170->142|170->142|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|177->149|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|178->150|179->151|179->151|179->151|179->151|179->151|179->151|179->151|179->151|179->151|181->153|181->153|181->153|181->153|181->153|181->153|181->153|181->153|181->153|181->153|181->153|181->153|211->183|211->183|211->183|211->183|211->183|211->183|226->198|226->198|226->198|226->198|226->198|226->198|227->199|227->199|227->199|227->199|227->199|227->199|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|228->200|229->201|229->201|229->201|229->201|229->201|229->201|229->201|229->201|229->201|229->201|229->201|229->201|230->202|230->202|230->202|230->202|230->202|230->202|231->203|231->203|231->203|231->203|231->203|231->203|232->204|232->204|232->204|232->204|232->204|232->204|236->208|236->208|236->208|242->214|242->214|242->214|242->214|242->214|242->214|243->215|243->215|243->215|243->215|243->215|243->215|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|250->222|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|251->223|252->224|252->224|252->224|252->224|252->224|252->224|252->224|252->224|252->224|254->226|254->226|254->226|254->226|254->226|254->226|254->226|254->226|254->226|254->226|254->226|254->226|264->236|264->236|264->236|264->236|264->236|264->236|267->239|267->239|267->239|267->239|267->239|267->239|306->278|306->278|306->278|306->278|309->281|309->281|309->281|309->281|309->281|309->281|312->284|312->284|312->284|312->284|312->284|312->284|313->285|313->285|313->285|313->285|313->285|313->285|316->288|316->288|316->288|316->288|316->288|316->288|319->291|319->291|319->291|319->291|319->291|319->291|322->294|322->294|322->294|322->294|322->294|322->294|325->297|325->297|325->297|325->297|325->297|325->297|328->300|328->300|328->300|328->300|328->300|328->300|332->304|332->304|332->304|332->304|332->304|332->304|332->304|332->304|332->304|332->304|332->304|332->304|355->327|355->327|355->327|355->327|355->327|355->327|359->331|359->331|359->331|359->331|359->331|359->331|360->332|360->332|360->332|360->332|360->332|360->332|393->365|393->365|393->365|393->365|394->366|394->366|396->368|396->368|403->375|403->375|403->375|404->376|404->376|404->376
                     -- GENERATED --
                 */
             

@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                           controllers.Application.index()
+GET     /documentation              controllers.Application.documentation()
 POST    /save                       controllers.ApiController.savePost()
 
 

@@ -1,6 +1,6 @@
 // @SOURCE:/Users/tajunker/Computer Engineering IUPUI/CSCI 240/Homework/termal/conf/routes
-// @HASH:124c7f0ea59609d9625af263bfa1627567fc893b
-// @DATE:Fri Dec 06 12:14:01 EST 2019
+// @HASH:0eb7547cff87e6193f634903cc2b76498f89ce35
+// @DATE:Mon Dec 09 14:11:33 EST 2019
 
 
 import play.core._
@@ -33,13 +33,17 @@ private[this] lazy val controllers_Application_index0 = Route("GET", PathPattern
         
 
 // @LINE:7
-private[this] lazy val controllers_ApiController_savePost1 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("save"))))
+private[this] lazy val controllers_Application_documentation1 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("documentation"))))
         
 
-// @LINE:11
-private[this] lazy val controllers_Assets_at2 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+// @LINE:8
+private[this] lazy val controllers_ApiController_savePost2 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("save"))))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """save""","""controllers.ApiController.savePost()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:12
+private[this] lazy val controllers_Assets_at3 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+        
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """documentation""","""controllers.Application.documentation()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """save""","""controllers.ApiController.savePost()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]] 
 }}
@@ -56,15 +60,23 @@ case controllers_Application_index0(params) => {
         
 
 // @LINE:7
-case controllers_ApiController_savePost1(params) => {
+case controllers_Application_documentation1(params) => {
+   call { 
+        invokeHandler(controllers.Application.documentation(), HandlerDef(this, "controllers.Application", "documentation", Nil,"GET", """""", Routes.prefix + """documentation"""))
+   }
+}
+        
+
+// @LINE:8
+case controllers_ApiController_savePost2(params) => {
    call { 
         invokeHandler(controllers.ApiController.savePost(), HandlerDef(this, "controllers.ApiController", "savePost", Nil,"POST", """""", Routes.prefix + """save"""))
    }
 }
         
 
-// @LINE:11
-case controllers_Assets_at2(params) => {
+// @LINE:12
+case controllers_Assets_at3(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
         invokeHandler(controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
    }
