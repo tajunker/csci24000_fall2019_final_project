@@ -86,6 +86,8 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
             	</div>
             </div>
         </div>
+
+
 	 	<!-- Subhead ================================================== -->
 	 	<header class="jumbotron subhead" id="overview">
 			  <div class="container">
@@ -142,8 +144,8 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						<br/>
 						<br/>
 						<h1 class="code-line" data-line-start=27 data-line-end=28 ><a id="Output_27"></a>Output</h1>
+						<p class="has-line-data" data-line-start="25" data-line-end="26">JSON data results of fetched zip codes made to Accuweather API are displayed in the UI and styled with Twitter Bootstrap for liquid design purposes and displayed in UI in index.scala.html.</p>
 						<ul style="margin-left:5%;">
-						<li class="has-line-data" data-line-start="28" data-line-end="29">JSON data results of fetched zip codes made to Accuweather API are displayed in the UI and styled with Twitter Bootstrap for liquid design purposes.</li>
 						<li class="has-line-data" data-line-start="29" data-line-end="30">The Application uses Twitter Bootstrap in order to recalculate layout depending on users browser window size. Making the web application display data seamlessly regardless of device user is on.</li>
 						<li class="has-line-data" data-line-start="30" data-line-end="31">Web application renders layout as a mobile application if user is accessing webpage from a mobile device or tablet, and as a standard webpage if on a computer or laptop, adapting to size of user’s browser window.</li>
 						<li class="has-line-data" data-line-start="31" data-line-end="32">If on a mobile device or tablet, user can save application to Home Screen and appropriate .ico files are utilized in order to make it appear as a native mobile OS application on user’s device homescreen.</li>
@@ -258,9 +260,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 	 	<footer class="footer">
 	 		<div class="container">
  				<p>Designed &amp; developed by <a href="http://twitter.com/tajunker" target="_blank">@tajunker</a>.</p>
- 				<p>termal uses <a href="http://www.playframework.com" target="_blank">Play!</a>, <a href="http://angularjs.org" target="_blank">AngualarJS</a>, and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a>.</p>
+ 				<p>Termal uses <a href="http://www.playframework.com" target="_blank">Play!</a>, <a href="http://angularjs.org" target="_blank">AngualarJS</a>, and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a>.</p>
  				<p>Deployed to <a href="https://www.heroku.com/" target="_blank">Heroku's</a> cloud computing web application hosting platform.</p>
- 				<p>termal uses <a href="http://www.accuweather.com/" target="_blank">accuweather.com</a> API - The JSON Weather&#8482; API for Developers.</p>
+ 				<p>Termal uses <a href="http://www.accuweather.com/" target="_blank">accuweather.com</a> API - The JSON Weather&#8482; API for Developers.</p>
  				<ul class="footer-links">
 		        	<li><a target="_blank" href="http://www.linkedin.com/in/tajunker">LinkedIn</a></li>
 		        	<li class="muted">&middot;</li>
@@ -276,18 +278,27 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 	 	<!-- Google Universal Analytics -->
 	 	<!--
 	 	<script>
-		  (function(i,s,o,g,r,a,m)"""),format.raw/*251.29*/("""{"""),format.raw/*251.30*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*251.80*/("""{"""),format.raw/*251.81*/("""
-		  (i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*252.40*/("""}"""),format.raw/*252.41*/(""",i[r].l=1*new Date();a=s.createElement(o),
+		  (function(i,s,o,g,r,a,m)"""),format.raw/*253.29*/("""{"""),format.raw/*253.30*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*253.80*/("""{"""),format.raw/*253.81*/("""
+		  (i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*254.40*/("""}"""),format.raw/*254.41*/(""",i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  """),format.raw/*254.5*/("""}"""),format.raw/*254.6*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  """),format.raw/*256.5*/("""}"""),format.raw/*256.6*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
 		  ga('create', 'UA-46957200-1', 'sleepy-garden-8606.herokuapp.com');
 		  ga('send', 'pageview');
 		
 		</script>
 		-->
-	 	<script src=""""),_display_(Seq[Any](/*261.18*/routes/*261.24*/.Assets.at("third/jquery/jquery-1.10.2.min.js"))),format.raw/*261.71*/("""" type="text/javascript"></script>
-		<script src=""""),_display_(Seq[Any](/*262.17*/routes/*262.23*/.Assets.at("third/bootstrap/js/bootstrap.js"))),format.raw/*262.68*/("""" type="text/javascript"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154365486-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag()"""),format.raw/*267.20*/("""{"""),format.raw/*267.21*/("""dataLayer.push(arguments);"""),format.raw/*267.47*/("""}"""),format.raw/*267.48*/("""
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-154365486-1');
+		</script>
+	 	<script src=""""),_display_(Seq[Any](/*272.18*/routes/*272.24*/.Assets.at("third/jquery/jquery-1.10.2.min.js"))),format.raw/*272.71*/("""" type="text/javascript"></script>
+		<script src=""""),_display_(Seq[Any](/*273.17*/routes/*273.23*/.Assets.at("third/bootstrap/js/bootstrap.js"))),format.raw/*273.68*/("""" type="text/javascript"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js" type="text/javascript"></script>
 		<!--
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.js.js"></script>
@@ -308,11 +319,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Dec 10 00:35:36 EST 2019
+                    DATE: Tue Dec 10 11:12:11 EST 2019
                     SOURCE: /Users/tajunker/Computer Engineering IUPUI/CSCI 240/Homework/termal/app/views/documentation.scala.html
-                    HASH: 6aea8863ca8de8391ba996e9e666080b2be2af60
-                    MATRIX: 863->0|1345->446|1360->452|1430->499|1519->552|1534->558|1615->616|1704->669|1719->675|1783->717|1872->770|1887->776|1976->842|2062->892|2077->898|2153->951|2239->1001|2254->1007|2310->1041|2401->1096|2416->1102|2478->1142|2572->1200|2587->1206|2659->1255|2755->1315|2770->1321|2839->1367|2935->1427|2950->1433|3019->1479|3088->1512|3103->1518|3170->1563|3240->1597|3255->1603|3327->1653|3417->1707|3432->1713|3494->1753|3637->1860|3652->1866|3720->1912|3822->1978|3837->1984|3903->2028|3990->2079|4005->2085|4080->2138|4167->2189|4182->2195|4237->2228|5357->3312|5372->3318|5434->3357|5554->3441|5569->3447|5642->3497|27770->25597|27800->25598|27879->25648|27909->25649|27978->25689|28008->25690|28167->25821|28196->25822|28449->26038|28465->26044|28535->26091|28623->26142|28639->26148|28707->26193
-                    LINES: 29->1|40->12|40->12|40->12|41->13|41->13|41->13|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|50->22|50->22|51->23|51->23|51->23|52->24|52->24|52->24|53->25|53->25|53->25|55->27|55->27|55->27|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|79->51|79->51|79->51|80->52|80->52|80->52|279->251|279->251|279->251|279->251|280->252|280->252|282->254|282->254|289->261|289->261|289->261|290->262|290->262|290->262
+                    HASH: 442c9e4f4f5540c81fe46afee28b54982c650683
+                    MATRIX: 863->0|1345->446|1360->452|1430->499|1519->552|1534->558|1615->616|1704->669|1719->675|1783->717|1872->770|1887->776|1976->842|2062->892|2077->898|2153->951|2239->1001|2254->1007|2310->1041|2401->1096|2416->1102|2478->1142|2572->1200|2587->1206|2659->1255|2755->1315|2770->1321|2839->1367|2935->1427|2950->1433|3019->1479|3088->1512|3103->1518|3170->1563|3240->1597|3255->1603|3327->1653|3417->1707|3432->1713|3494->1753|3637->1860|3652->1866|3720->1912|3822->1978|3837->1984|3903->2028|3990->2079|4005->2085|4080->2138|4167->2189|4182->2195|4237->2228|5357->3312|5372->3318|5434->3357|5554->3441|5569->3447|5642->3497|27810->25637|27840->25638|27919->25688|27949->25689|28018->25729|28048->25730|28207->25861|28236->25862|28688->26285|28718->26286|28773->26312|28803->26313|28937->26410|28953->26416|29023->26463|29111->26514|29127->26520|29195->26565
+                    LINES: 29->1|40->12|40->12|40->12|41->13|41->13|41->13|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|50->22|50->22|51->23|51->23|51->23|52->24|52->24|52->24|53->25|53->25|53->25|55->27|55->27|55->27|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|79->51|79->51|79->51|80->52|80->52|80->52|281->253|281->253|281->253|281->253|282->254|282->254|284->256|284->256|295->267|295->267|295->267|295->267|300->272|300->272|300->272|301->273|301->273|301->273
                     -- GENERATED --
                 */
             
