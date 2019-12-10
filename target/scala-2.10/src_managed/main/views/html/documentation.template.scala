@@ -43,11 +43,21 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 	    <link rel="stylesheet" media="screen" href=""""),_display_(Seq[Any](/*15.51*/routes/*15.57*/.Assets.at("third/bootstrap/js/google-code-prettify/prettify.css"))),format.raw/*15.123*/("""">
 		<link rel="stylesheet" media="screen" href=""""),_display_(Seq[Any](/*16.48*/routes/*16.54*/.Assets.at("third/bootstrap/css/bootstrap-theme.css"))),format.raw/*16.107*/("""">
 		<link rel="stylesheet" media="screen" href=""""),_display_(Seq[Any](/*17.48*/routes/*17.54*/.Assets.at("stylesheets/main.css"))),format.raw/*17.88*/("""">
-		<link rel="shortcut icon" type="image/ico" href=""""),_display_(Seq[Any](/*18.53*/routes/*18.59*/.Assets.at("images/favicon.ico"))),format.raw/*18.91*/("""">
+		<link rel="shortcut icon" type="image/ico" href=""""),_display_(Seq[Any](/*18.53*/routes/*18.59*/.Assets.at("images/favicon/favicon.ico"))),format.raw/*18.99*/("""">
 
-		<script src=""""),_display_(Seq[Any](/*20.17*/routes/*20.23*/.Assets.at("third/angularjs/angular.min.js"))),format.raw/*20.67*/("""" type="text/javascript"></script>
-		<script src=""""),_display_(Seq[Any](/*21.17*/routes/*21.23*/.Assets.at("third/angularjs/angular-resource.min.js"))),format.raw/*21.76*/("""" type="text/javascript"></script>
-		<script src=""""),_display_(Seq[Any](/*22.17*/routes/*22.23*/.Assets.at("javascripts/main.js"))),format.raw/*22.56*/("""" type="text/javascript"></script>
+		<link rel="apple-touch-icon" sizes="180x180" href=""""),_display_(Seq[Any](/*20.55*/routes/*20.61*/.Assets.at("images/favicon/apple-touch-icon.png"))),format.raw/*20.110*/("""">
+		<link rel="icon" type="image/png" sizes="32x32" href=""""),_display_(Seq[Any](/*21.58*/routes/*21.64*/.Assets.at("images/favicon/favicon-32x32.png"))),format.raw/*21.110*/("""">
+		<link rel="icon" type="image/png" sizes="16x16" href=""""),_display_(Seq[Any](/*22.58*/routes/*22.64*/.Assets.at("images/favicon/favicon-16x16.png"))),format.raw/*22.110*/("""">
+		<link rel="manifest" href=""""),_display_(Seq[Any](/*23.31*/routes/*23.37*/.Assets.at("images/favicon/site.webmanifest"))),format.raw/*23.82*/("""">
+		<link rel="mask-icon" href=""""),_display_(Seq[Any](/*24.32*/routes/*24.38*/.Assets.at("images/favicon/safari-pinned-tab.svg"))),format.raw/*24.88*/("""" color="#603cba">
+		<link rel="shortcut icon" href=""""),_display_(Seq[Any](/*25.36*/routes/*25.42*/.Assets.at("images/favicon/favicon.ico"))),format.raw/*25.82*/("""">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="msapplication-config" content=""""),_display_(Seq[Any](/*27.47*/routes/*27.53*/.Assets.at("images/favicon/browserconfig.xml"))),format.raw/*27.99*/("""">
+		<meta name="theme-color" content="#ffffff">
+
+		<script src=""""),_display_(Seq[Any](/*30.17*/routes/*30.23*/.Assets.at("third/angularjs/angular.min.js"))),format.raw/*30.67*/("""" type="text/javascript"></script>
+		<script src=""""),_display_(Seq[Any](/*31.17*/routes/*31.23*/.Assets.at("third/angularjs/angular-resource.min.js"))),format.raw/*31.76*/("""" type="text/javascript"></script>
+		<script src=""""),_display_(Seq[Any](/*32.17*/routes/*32.23*/.Assets.at("javascripts/main.js"))),format.raw/*32.56*/("""" type="text/javascript"></script>
 	 </head>
 	 <body>
 	 	<!-- Navbar ========================================================= -->
@@ -66,8 +76,8 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 		                <ul class="navbar-nav nav" style="margin: 0px; text-align: center;">
 		                	<li class=""><a href="/">Home</a></li>
 		                	<li class=""><a href="/documentation">Documentation</a></li>
-		                	<li class=""><a target="_blank" href=""""),_display_(Seq[Any](/*41.59*/routes/*41.65*/.Assets.at("pdf/Termal_UMLDiagram.pdf"))),format.raw/*41.104*/("""">UML Diagram</a></li>
-		                    <li class=""><a target="_blank" href=""""),_display_(Seq[Any](/*42.62*/routes/*42.68*/.Assets.at("pdf/Tercio-Agra-Junker-Resume-V3.pdf"))),format.raw/*42.118*/("""">Resume</a></li>
+		                	<li class=""><a target="_blank" href=""""),_display_(Seq[Any](/*51.59*/routes/*51.65*/.Assets.at("pdf/Termal_UMLDiagram.pdf"))),format.raw/*51.104*/("""">UML Diagram</a></li>
+		                    <li class=""><a target="_blank" href=""""),_display_(Seq[Any](/*52.62*/routes/*52.68*/.Assets.at("pdf/Tercio-Agra-Junker-Resume-V3.pdf"))),format.raw/*52.118*/("""">Resume</a></li>
 		                    <li class=""><a target="_blank" href="http://www.linkedin.com/in/tajunker">LinkedIn</a></li>
 				        	<li class=""><a target="_blank" href="https://github.com/tajunker">GitHub</a></li>
 				        	<li class=""><a target="_blank" href="http://twitter.com/tajunker">Twitter</a></li>
@@ -88,26 +98,26 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 		<div class="container" data-ng-controller="MainController" id="Weather results">
 	 		<div class="row clearfix">
 	 			<div class="span12 column col-md-12" style="margin-left: 0px;">
-				 	<div>				
-						<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Goals_0"></a>Goals:</h1>
+				 	<div style="word-wrap: break-word;">				
+						<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Goals_0"></a>Goals</h1>
 						<p class="has-line-data" data-line-start="1" data-line-end="2">Create a project that illustrates what you’ve done this semester. You have quite a bit of leeway on this project, so pick something interesting. Ideal projects will illustrate the primary ideas of this course.</p>
 						<br/>
 						<br/>
-						<h1 class="code-line" data-line-start=3 data-line-end=4 ><a id="Termal_is_Deployed_to_Heroku_3"></a>Termal is Deployed to Heroku</h1>
+						<h1 class="code-line" data-line-start=3 data-line-end=4 ><a id="Termal_is_Deployed_to_Heroku_3"></a>Termal is Deployed to Heroku:</h1>
 						<p class="has-line-data" data-line-start="4" data-line-end="8">The Termal Application has been deployed to Heroku using the Heroku Git and Play Framework deployment integration. To visit and interact with the deployed web application, please, point your browser to:
 						<br/>
 						<br/>
-						- <a href="https://termalapp.herokuapp.com/">https://termalapp.herokuapp.com/</a>
+						<a href="https://termalapp.herokuapp.com/">https://termalapp.herokuapp.com/</a>
 						<br/>
 						<br/>
 						<h1 class="code-line" data-line-start=3 data-line-end=4 ><a id="Termal_is_Deployed_to_Heroku_3"></a>Documentation</h1>
 						To view documentation in production visit:
 						<br/>
 						<br/>
-						- <a href="https://termalapp.herokuapp.com/documentation">https://termalapp.herokuapp.com/documentation</a></p>
+						<a href="https://termalapp.herokuapp.com/documentation">https://termalapp.herokuapp.com/documentation</a></p>
 						<br/>
 						<br/>
-						<h1 class="code-line" data-line-start=9 data-line-end=10 ><a id="Overview_9"></a>Overview:</h1>
+						<h1 class="code-line" data-line-start=9 data-line-end=10 ><a id="Overview_9"></a>Overview</h1>
 						<p class="has-line-data" data-line-start="10" data-line-end="11">termal allows users to input Zip Codes, separated by commas, into the input field. Temperatures for those Zip Codes are fetched from the Accuweather™ API when the user clicks enter or the search button. Fetched data is parsed and displayed in view in the UI. This web application uses MVC design pattern to fully separate view from controller and model (we are not using the model in MVC, as we are not saving anything to a database. Fetched JSON data is also stored in Weather and Location Java classes of application for future use and potential integration with a database. This application uses a number of different technologies to accomplish the previously mentioned goals. The application was developed as part of my learning process for feeling out the following technology stack: Java, Play! Framework 2.2.6, JavaScript, AngularJS, LoDashJS, HTML, CSS, Twitter Bootstrap, Heroku’s Git &amp; Play! app deployment integration, and the Accuweather API and ipify API.</p>
 						<br/>
 						<br/>
@@ -115,7 +125,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						<p class="has-line-data" data-line-start="13" data-line-end="15">To install play on your local machine please visit the following Play Framework installation webpage at:
 						<br/>
 						<br/>
-						- <a href="https://www.playframework.com/documentation/2.2.x/Installing">https://www.playframework.com/documentation/2.2.x/Installing</a></p>
+						<a href="https://www.playframework.com/documentation/2.2.x/Installing">https://www.playframework.com/documentation/2.2.x/Installing</a></p>
 						<br/>
 						<br/>
 						<h1 class="code-line" data-line-start=16 data-line-end=17 ><a id="Running_Play_Framework_Application_16"></a>Running Play Framework Application</h1>
@@ -127,11 +137,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						- you should then be able to see Termal running locally on your machine.</p>
 						<br/>
 						<br/>
-						<h1 class="code-line" data-line-start=24 data-line-end=25 ><a id="Input_24"></a>Input:</h1>
+						<h1 class="code-line" data-line-start=24 data-line-end=25 ><a id="Input_24"></a>Input</h1>
 						<p class="has-line-data" data-line-start="25" data-line-end="26">The user inputs comma separated zip codes into the input box. Temperatures for those zip codes are fetched from the Accuweather API when the user presses enter or clicks the search button.</p>
 						<br/>
 						<br/>
-						<h1 class="code-line" data-line-start=27 data-line-end=28 ><a id="Output_27"></a>Output:</h1>
+						<h1 class="code-line" data-line-start=27 data-line-end=28 ><a id="Output_27"></a>Output</h1>
 						<ul style="margin-left:5%;">
 						<li class="has-line-data" data-line-start="28" data-line-end="29">JSON data results of fetched zip codes made to Accuweather API are displayed in the UI and styled with Twitter Bootstrap for liquid design purposes.</li>
 						<li class="has-line-data" data-line-start="29" data-line-end="30">The Application uses Twitter Bootstrap in order to recalculate layout depending on users browser window size. Making the web application display data seamlessly regardless of device user is on.</li>
@@ -142,7 +152,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						<li class="has-line-data" data-line-start="34" data-line-end="35">JSON object of the first zip code entered is also output to view.</li>
 						<li class="has-line-data" data-line-start="35" data-line-end="36">A table with returned JSON objects is also output to view.</li>
 						<li class="has-line-data" data-line-start="36" data-line-end="51">In each weather information div containers the following information is displayed:
-						<ul>
+						<ul style="margin-left:10%!important;">
 						<li class="has-line-data" data-line-start="37" data-line-end="38">City name</li>
 						<li class="has-line-data" data-line-start="38" data-line-end="39">Weather text (e.g. cloudy, sunny, etc.)</li>
 						<li class="has-line-data" data-line-start="39" data-line-end="40">Feels like (in Celsius and Fahrenheit)</li>
@@ -164,7 +174,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						</ul>
 						<br/>
 						<br/>
-						<h1 class="code-line" data-line-start=54 data-line-end=55 ><a id="Steps_54"></a>Steps:</h1>
+						<h1 class="code-line" data-line-start=54 data-line-end=55 ><a id="Steps_54"></a>Steps</h1>
 						<p class="has-line-data" data-line-start="55" data-line-end="56">For this program we have one main function called index() and documentation() in Application.java which is handled by the play framework to render the index.scala.html page and the documentation.scala.html page respectively. The following functions are then used.</p>
 						<ul style="margin-left:5%;">
 						<li class="has-line-data" data-line-start="57" data-line-end="58">
@@ -184,7 +194,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						</li>
 						<li class="has-line-data" data-line-start="63" data-line-end="66">
 						<p class="has-line-data" data-line-start="63" data-line-end="64">getAllLocations() parses zipcodes, maps zipcode and promises to return an array of location keys and makes an http request to Accuweather Location API for each zip code entered. This is necessary to obtain the Location Key of each zip code in order to make a HTTP GET request to the Accuweather Current Conditions API which uses the Location Key and API key as part of the HTTP GET request URL, instead of a zip code. Since the Accuweather Current Conditions API does not take a zip code as a parameter and instead uses a Location Key, this is a necessary step.</p>
-						<ul>
+						<ul style="margin-left:10%!important;">
 						<li class="has-line-data" data-line-start="64" data-line-end="65">Make a HTTP GET request to Accuweather Locations API to return Location Key for Accuweather Current Conditions API using the following URL replacing ZIPCODE_HERE with user inputed zip code values and API_KEY with API key.</li>
 						<li class="has-line-data" data-line-start="65" data-line-end="66"><a href="https://dataservice.accuweather.com/locations/v1/postalcodes/US/search?apikey=API_KEY&amp;q=ZIPCODE_HERE">https://dataservice.accuweather.com/locations/v1/postalcodes/US/search?apikey=API_KEY&amp;q=ZIPCODE_HERE</a></li>
 						</ul>
@@ -194,7 +204,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						</li>
 						<li class="has-line-data" data-line-start="67" data-line-end="71">
 						<p class="has-line-data" data-line-start="67" data-line-end="68">getAllTemps() we can then call the function getAllTemps() for each zip code entered with the returned Location Key information obtained from Accuweather Locations API in order to obtain Current weather Conditions for each zip code entered.</p>
-						<ul>
+						<ul style="margin-left:10%!important;">
 						<li class="has-line-data" data-line-start="68" data-line-end="69">The Accuweather Current Conditions API uses the Location Key obtained from Accuweather Location API HTTP GET request to return a JSON object of current conditions for each location key requested.</li>
 						<li class="has-line-data" data-line-start="69" data-line-end="70">Makes a HTTP GET request to the Accuweather Current Conditions API using the location key obtained from Accuweather Locations API for each zip code entered using the following URL replacing LOC_KEY with the returned values for Location Key of the Locations API HTTP GET request and API_KEY with API key</li>
 						<li class="has-line-data" data-line-start="70" data-line-end="71"><a href="https://dataservice.accuweather.com/currentconditions/v1/LOC_KEY?apikey=API_KEY&amp;details=true">https://dataservice.accuweather.com/currentconditions/v1/LOC_KEY?apikey=API_KEY&amp;details=true</a></li>
@@ -202,7 +212,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						</li>
 						<li class="has-line-data" data-line-start="71" data-line-end="76">
 						<p class="has-line-data" data-line-start="71" data-line-end="72">getAllTempsPrecipitation() for precipitation probability we have to make another HTTP GET request to a separate Accuweather API called Forecast API, specifically the 1 Day of Daily Forecasts get method of the Accuweather Forecast API.</p>
-						<ul>
+						<ul style="margin-left:10%!important;">
 						<li class="has-line-data" data-line-start="72" data-line-end="73">The Accuweather Forecast API URL, similarly to the Current Conditions API URL does not take a zip code as a parameter, but rather a Location Key obtained from the HTTP GET request made to the Accuweather Locations API.</li>
 						<li class="has-line-data" data-line-start="73" data-line-end="74">Since we have already obtained the Location Keys for each zip code previously in the getAllLocations() function it is unecessary to make a new call to the Accuweather Locations API so we instead use the same values to make the Forecast API HTTP GET request.</li>
 						<li class="has-line-data" data-line-start="74" data-line-end="75">Makes a HTTP GET request to the Accuweather Forecast API using the location key obtained from Accuweather Locations API for each zip code entered using the following URL replacing LOC_KEY with the returned values for Location Key of the Locations API HTTP GET request and API_KEY with API key</li>
@@ -214,13 +224,13 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						</li>
 						<li class="has-line-data" data-line-start="77" data-line-end="79">
 						<p class="has-line-data" data-line-start="77" data-line-end="78">getIpLocation() is similar to getAllLocations() but instead it uses the Accuweather Locations API IP Address Search get method to obtain a Location Key instead of the Accuweather Locations API Postal Code Search get method.</p>
-						<ul>
+						<ul style="margin-left:10%!important;">
 						<li class="has-line-data" data-line-start="78" data-line-end="79">getIpLocation() then also uses that Location Key to call getAllTemps() and getAllTempsPrecipitation()</li>
 						</ul>
 						</li>
 						<li class="has-line-data" data-line-start="79" data-line-end="88">
 						<p class="has-line-data" data-line-start="79" data-line-end="80">savePostData() makes HTTP POST request to the /save URL which is handled by the Play Framework routes to call the controllers.ApiController.savePost() method in Controllers -&gt; ApiController -&gt; savePost()</p>
-						<ul>
+						<ul style="margin-left:10%!important;">
 						<li class="has-line-data" data-line-start="80" data-line-end="81">in main.js in under MainControllers implementation of savePostData() two objects are created one for weather and one for location</li>
 						<li class="has-line-data" data-line-start="81" data-line-end="82">a mergedlist is instantiated with weather and location data which is pushed to locations and weathers arrays</li>
 						<li class="has-line-data" data-line-start="82" data-line-end="83">pushed data is stored in postData which is the argument the savePostData function takes as input.</li>
@@ -233,7 +243,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 						</li>
 						<li class="has-line-data" data-line-start="88" data-line-end="92">
 						<p class="has-line-data" data-line-start="88" data-line-end="89">In index.scala.html the appropriate weather information is displayed in a weather information div container that uses the AngularJS ‘ng-repeat’ to display each of the zip codes weather information in separate containers passing the data handled by AngularJS to the view via the data-ng-controller=“MainController” -&gt; ng-repeat=“result in processedData” AngularJS HTML tags</p>
-						<ul>
+						<ul style="margin-left:10%!important;">
 						<li class="has-line-data" data-line-start="89" data-line-end="90">the getTemps() function in AngularJS demoApp.controller(“MainController”, function($scope, Service, $q) is called from the view in index.scala.html as an onClick action when the user presses enter or clicks the search button using the data-ng-click=“getTemps()” AngularJS HTML tag.</li>
 						<li class="has-line-data" data-line-start="90" data-line-end="91">index.scala.html then renders the JSON object of the first zip code entered and outputs it to the UI</li>
 						<li class="has-line-data" data-line-start="91" data-line-end="92">index.scala.html then renders the JSON object of each zip code fetched from the Accuweather API in a Table format.</li>
@@ -248,7 +258,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 	 	<footer class="footer">
 	 		<div class="container">
  				<p>Designed &amp; developed by <a href="http://twitter.com/tajunker" target="_blank">@tajunker</a>.</p>
- 				<p>SimpleWeather uses <a href="http://www.playframework.com" target="_blank">Play!</a>, <a href="http://angularjs.org" target="_blank">AngualarJS</a>, and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a>.</p>
+ 				<p>termal uses <a href="http://www.playframework.com" target="_blank">Play!</a>, <a href="http://angularjs.org" target="_blank">AngualarJS</a>, and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a>.</p>
  				<p>Deployed to <a href="https://www.heroku.com/" target="_blank">Heroku's</a> cloud computing web application hosting platform.</p>
  				<p>termal uses <a href="http://www.accuweather.com/" target="_blank">accuweather.com</a> API - The JSON Weather&#8482; API for Developers.</p>
  				<ul class="footer-links">
@@ -266,18 +276,18 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 	 	<!-- Google Universal Analytics -->
 	 	<!--
 	 	<script>
-		  (function(i,s,o,g,r,a,m)"""),format.raw/*241.29*/("""{"""),format.raw/*241.30*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*241.80*/("""{"""),format.raw/*241.81*/("""
-		  (i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*242.40*/("""}"""),format.raw/*242.41*/(""",i[r].l=1*new Date();a=s.createElement(o),
+		  (function(i,s,o,g,r,a,m)"""),format.raw/*251.29*/("""{"""),format.raw/*251.30*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*251.80*/("""{"""),format.raw/*251.81*/("""
+		  (i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*252.40*/("""}"""),format.raw/*252.41*/(""",i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  """),format.raw/*244.5*/("""}"""),format.raw/*244.6*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  """),format.raw/*254.5*/("""}"""),format.raw/*254.6*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
 		  ga('create', 'UA-46957200-1', 'sleepy-garden-8606.herokuapp.com');
 		  ga('send', 'pageview');
 		
 		</script>
 		-->
-	 	<script src=""""),_display_(Seq[Any](/*251.18*/routes/*251.24*/.Assets.at("third/jquery/jquery-1.10.2.min.js"))),format.raw/*251.71*/("""" type="text/javascript"></script>
-		<script src=""""),_display_(Seq[Any](/*252.17*/routes/*252.23*/.Assets.at("third/bootstrap/js/bootstrap.js"))),format.raw/*252.68*/("""" type="text/javascript"></script>
+	 	<script src=""""),_display_(Seq[Any](/*261.18*/routes/*261.24*/.Assets.at("third/jquery/jquery-1.10.2.min.js"))),format.raw/*261.71*/("""" type="text/javascript"></script>
+		<script src=""""),_display_(Seq[Any](/*262.17*/routes/*262.23*/.Assets.at("third/bootstrap/js/bootstrap.js"))),format.raw/*262.68*/("""" type="text/javascript"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js" type="text/javascript"></script>
 		<!--
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.js.js"></script>
@@ -298,11 +308,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Dec 09 14:42:22 EST 2019
+                    DATE: Tue Dec 10 00:35:36 EST 2019
                     SOURCE: /Users/tajunker/Computer Engineering IUPUI/CSCI 240/Homework/termal/app/views/documentation.scala.html
-                    HASH: 7177ff13e562a393b1554425269d0a352785e66d
-                    MATRIX: 863->0|1345->446|1360->452|1430->499|1519->552|1534->558|1615->616|1704->669|1719->675|1783->717|1872->770|1887->776|1976->842|2062->892|2077->898|2153->951|2239->1001|2254->1007|2310->1041|2401->1096|2416->1102|2470->1134|2526->1154|2541->1160|2607->1204|2694->1255|2709->1261|2784->1314|2871->1365|2886->1371|2941->1404|4061->2488|4076->2494|4138->2533|4258->2617|4273->2623|4346->2673|26215->24514|26245->24515|26324->24565|26354->24566|26423->24606|26453->24607|26612->24738|26641->24739|26894->24955|26910->24961|26980->25008|27068->25059|27084->25065|27152->25110
-                    LINES: 29->1|40->12|40->12|40->12|41->13|41->13|41->13|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|50->22|50->22|69->41|69->41|69->41|70->42|70->42|70->42|269->241|269->241|269->241|269->241|270->242|270->242|272->244|272->244|279->251|279->251|279->251|280->252|280->252|280->252
+                    HASH: 6aea8863ca8de8391ba996e9e666080b2be2af60
+                    MATRIX: 863->0|1345->446|1360->452|1430->499|1519->552|1534->558|1615->616|1704->669|1719->675|1783->717|1872->770|1887->776|1976->842|2062->892|2077->898|2153->951|2239->1001|2254->1007|2310->1041|2401->1096|2416->1102|2478->1142|2572->1200|2587->1206|2659->1255|2755->1315|2770->1321|2839->1367|2935->1427|2950->1433|3019->1479|3088->1512|3103->1518|3170->1563|3240->1597|3255->1603|3327->1653|3417->1707|3432->1713|3494->1753|3637->1860|3652->1866|3720->1912|3822->1978|3837->1984|3903->2028|3990->2079|4005->2085|4080->2138|4167->2189|4182->2195|4237->2228|5357->3312|5372->3318|5434->3357|5554->3441|5569->3447|5642->3497|27770->25597|27800->25598|27879->25648|27909->25649|27978->25689|28008->25690|28167->25821|28196->25822|28449->26038|28465->26044|28535->26091|28623->26142|28639->26148|28707->26193
+                    LINES: 29->1|40->12|40->12|40->12|41->13|41->13|41->13|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|50->22|50->22|51->23|51->23|51->23|52->24|52->24|52->24|53->25|53->25|53->25|55->27|55->27|55->27|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|79->51|79->51|79->51|80->52|80->52|80->52|279->251|279->251|279->251|279->251|280->252|280->252|282->254|282->254|289->261|289->261|289->261|290->262|290->262|290->262
                     -- GENERATED --
                 */
             
